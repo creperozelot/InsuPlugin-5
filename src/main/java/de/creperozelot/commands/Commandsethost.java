@@ -27,7 +27,9 @@ public class Commandsethost extends Command {
 
             if (player.hasPermission("insu.admin.sethost")) {
 
-                player.sendMessage(creperozelot.prefix + "&fDu hast den Hoster erfolgreich auf &a" + hoster + " &fgesetzt.");
+                creperozelot.getInstance().getConfig().set("hoster", hoster);
+                creperozelot.getInstance().getConfig().save();
+                player.sendMessage(creperozelot.prefix + "&fDu hast den Hoster erfolgreich auf &a" + creperozelot.getInstance().getConfig().getString("hoster") + " &fgesetzt.");
 
 
             } else {
