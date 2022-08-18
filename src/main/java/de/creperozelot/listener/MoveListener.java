@@ -1,0 +1,49 @@
+package de.creperozelot.listener;
+
+import de.creperozelot.creperozelot;
+import cn.nukkit.Player;
+import cn.nukkit.block.Block;
+import cn.nukkit.entity.Entity;
+import cn.nukkit.event.EventHandler;
+import cn.nukkit.event.Listener;
+import cn.nukkit.event.player.PlayerMoveEvent;
+import cn.nukkit.math.Vector3;
+import cn.nukkit.potion.Effect;
+
+public class MoveListener implements Listener {
+    private creperozelot plugin;
+
+    public MoveListener(creperozelot plugin) {
+        this.plugin = plugin;
+    }
+
+    @EventHandler
+    public void onMove(PlayerMoveEvent event) {
+        Player player = event.getPlayer();
+        Block block = player.getLevel().getBlock((Vector3)player.getLocation().subtract(0.0D, 1.0D, 0.0D));
+        Block block1 = player.getLevel().getBlock((Vector3)player.getLocation());
+        int i = 0;
+        if (i == 1) {
+            if (block1.getId() == 8) {
+                player.sendTitle("&6&lWasser ist Säure", "&6Halte dich von Wasser fern");
+                        player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(1).setVisible(false));
+            }
+            if (block instanceof de.creperozelot.events.Water)
+                block.onEntityCollide((Entity)player);
+            if (player.isInsideOfWater()) {
+                player.sendTitle("&6&lWasser ist Säure", "&6Halte dich von Wasser fern");
+                        player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(2).setVisible(false));
+            }
+            if (player.isSwimming()) {
+                player.sendTitle("&6&lWasser ist Säure", "&6Halte dich von Wasser fern");
+                        player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(2).setVisible(false));
+            }
+        }
+        int HotGrass = 1;
+        if (HotGrass == 1 &&
+                block.getId() == 2) {
+            player.setOnFire(20);
+            player.sendTitle("&6&lHot Grass", "&6Du darfst dich nicht auf grass Befinden");
+        }
+    }
+}
