@@ -26,12 +26,12 @@ public class CommandTest extends Command {
             Player player = (Player) commandSender;
 
             if (player.hasPermission("insu.dev.test")) {
-                commandSender.sendMessage("" +new Storage().EventRunning);
+                commandSender.sendMessage("" + creperozelot.getInstance().getConfig().getBoolean("test"));
             } else {
-                commandSender.sendMessage(creperozelot.colorize("&cDu hast keine Berechtigung für diesen Command."));
+                commandSender.sendMessage("" + creperozelot.getInstance().getConfig().getBoolean("test"));
             }
         } else {
-                commandSender.sendMessage("" +new Storage().EventRunning);
+            commandSender.sendMessage("" + creperozelot.getInstance().getConfig().getBoolean("test"));
         }
 
 

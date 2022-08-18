@@ -1,6 +1,6 @@
 package de.creperozelot.commands;
 
-import de.creperozelot.events.HotGrass;
+
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

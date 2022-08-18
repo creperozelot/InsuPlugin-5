@@ -1,5 +1,6 @@
 package de.creperozelot.listener;
 
+import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
 import cn.nukkit.Player;
 import cn.nukkit.block.Block;
@@ -39,11 +40,9 @@ public class MoveListener implements Listener {
                         player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(2).setVisible(false));
             }
         }
-        int HotGrass = 1;
-        if (HotGrass == 1 &&
-                block.getId() == 2) {
-            player.setOnFire(20);
-            player.sendTitle("&6&lHot Grass", "&6Du darfst dich nicht auf grass Befinden");
+        if (StaticCache.EVENT_HOTGRASS && block.getId() == 2) {
+            player.setOnFire(60);
+            player.sendTitle(creperozelot.colorize("&a&lHot Grass"), creperozelot.colorize("&6Du darfst dich nicht auf grass Befinden"), 0, 40, 20);
         }
     }
 }

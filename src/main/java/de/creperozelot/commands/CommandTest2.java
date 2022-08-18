@@ -7,7 +7,6 @@ import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
 
 public class CommandTest2 extends Command {
-    boolean HotGrass = new Storage().Hotgrass;
 
 
     public CommandTest2(String name, String description, String usageMessage, String[] aliases) {
@@ -16,28 +15,26 @@ public class CommandTest2 extends Command {
     }
 
 
-
-
     @Override
     public boolean execute(CommandSender commandSender, String s, String[] args) {
 
 
-
-        if (commandSender instanceof Player){
             Player player = (Player) commandSender;
 
             if (player.hasPermission("insu.dev.test")) {
-                player.sendMessage("test " + HotGrass);
+                if (creperozelot.getInstance().getConfig().getBoolean("test")) {
+                    creperozelot.getInstance().getConfig().set("test", false);
+                    creperozelot.getInstance().getConfig().save();
+                } else {
+                    creperozelot.getInstance().getConfig().set("test", true);
+                    creperozelot.getInstance().getConfig().save();
+                }
             } else {
                 commandSender.sendMessage(creperozelot.colorize("&cDu hast keine Berechtigung für diesen Command."));
             }
-        } else {
-            commandSender.sendMessage("test " + HotGrass);
-        }
-
-
 
 
         return true;
     }
+
 }
