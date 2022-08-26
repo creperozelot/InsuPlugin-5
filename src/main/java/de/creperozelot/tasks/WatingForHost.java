@@ -72,10 +72,6 @@ public class WatingForHost extends Task {
                 }
 
             }
-        } else {
-            for (Player player : Server.getInstance().getOnlinePlayers().values()) {
-                player.sendActionBar(creperozelot.colorize("&c&lLeben von deinem Partner : %insert%"), 0, 60, 20);
-            }
         }
 
     }

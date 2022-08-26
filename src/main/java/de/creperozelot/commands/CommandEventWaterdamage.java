@@ -13,11 +13,11 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
-public class CommandEventHotGrass extends Command {
+public class CommandEventWaterdamage extends Command {
 
-    public CommandEventHotGrass(String name, String description, String usageMessage, String[] aliases) {
+    public CommandEventWaterdamage(String name, String description, String usageMessage, String[] aliases) {
         super(name, description, usageMessage, aliases);
-        this.setPermission("insu.admin.hotgrass");
+        this.setPermission("insu.admin.waterdamage");
     }
 
     @Override
@@ -38,7 +38,7 @@ public class CommandEventHotGrass extends Command {
         }
 
         StaticCache.EVENT_ACTIVE = true;
-        StaticCache.EVENT_HOTGRASS = true;
+        StaticCache.EVENT_WATERDANAGE = true;
 
         new Timer().schedule(new TimerTask() {
             @Override
@@ -50,25 +50,24 @@ public class CommandEventHotGrass extends Command {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                StaticCache.EVENT_HOTGRASS = false;
+                StaticCache.EVENT_WATERDANAGE = false;
             }
-        }, 1000 * 60 * 2);
+        }, 1000 * 60 * 1);
 
-        player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &aHotGrass&f Aktiviert."));
+        player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &1WaterDamage&a Aktiviert."));
 
         for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
             Level level = AllOnlinePlayers.getLevel();
 
-
             new Timer().schedule(new TimerTask() {
                 @Override
                 public void run() {
-                    AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&fWird &cBeendet"), 0, 60, 40);
+                    AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamage"), creperozelot.colorize("&fWird &cBeendet"), 0, 60, 40);
                     level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
                 }
-            }, 1000 * 60 * 2);
+            }, 1000 * 60 * 10);
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&fWird Gestartet..."), 20, 60, 0);
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamage"), creperozelot.colorize("&fWird Gestartet..."), 20, 60, 0);
 
             try {
                 TimeUnit.SECONDS.sleep(3);
@@ -76,7 +75,7 @@ public class CommandEventHotGrass extends Command {
                 throw new RuntimeException(e);
             }
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&fStart in &45"), 0, 40, 0);
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamage"), creperozelot.colorize("&fStart in &45"), 0, 40, 0);
 
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -84,7 +83,7 @@ public class CommandEventHotGrass extends Command {
                 throw new RuntimeException(e);
             }
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&fStart in &c4"), 0, 40, 0);
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamage"), creperozelot.colorize("&fStart in &c4"), 0, 40, 0);
 
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -92,7 +91,7 @@ public class CommandEventHotGrass extends Command {
                 throw new RuntimeException(e);
             }
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&fStart in &e3"), 0, 40, 0);
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamage"), creperozelot.colorize("&fStart in &e3"), 0, 40, 0);
 
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -100,7 +99,7 @@ public class CommandEventHotGrass extends Command {
                 throw new RuntimeException(e);
             }
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&fStart in &22"), 0, 40, 0);
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamage"), creperozelot.colorize("&fStart in &22"), 0, 40, 0);
 
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -108,14 +107,14 @@ public class CommandEventHotGrass extends Command {
                 throw new RuntimeException(e);
             }
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&fStart in &a1"), 0, 40, 0);
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamage"), creperozelot.colorize("&fStart in &a1"), 0, 40, 0);
             try {
                 TimeUnit.SECONDS.sleep(1);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &a&lHotgrass"), creperozelot.colorize("&aStart"), 0, 40, 0);
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &1&lWaterDamge"), creperozelot.colorize("&aStart"), 0, 40, 0);
             level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
         }
 

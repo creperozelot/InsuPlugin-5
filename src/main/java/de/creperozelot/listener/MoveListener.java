@@ -23,20 +23,19 @@ public class MoveListener implements Listener {
         Player player = event.getPlayer();
         Block block = player.getLevel().getBlock((Vector3)player.getLocation().subtract(0.0D, 1.0D, 0.0D));
         Block block1 = player.getLevel().getBlock((Vector3)player.getLocation());
-        int i = 0;
-        if (i == 1) {
+        if (StaticCache.EVENT_WATERDANAGE) {
             if (block1.getId() == 8) {
-                player.sendTitle("&6&lWasser ist Säure", "&6Halte dich von Wasser fern");
+                player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
                         player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(1).setVisible(false));
             }
             if (block instanceof de.creperozelot.events.Water)
                 block.onEntityCollide((Entity)player);
             if (player.isInsideOfWater()) {
-                player.sendTitle("&6&lWasser ist Säure", "&6Halte dich von Wasser fern");
+                player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
                         player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(2).setVisible(false));
             }
             if (player.isSwimming()) {
-                player.sendTitle("&6&lWasser ist Säure", "&6Halte dich von Wasser fern");
+                player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
                         player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(2).setVisible(false));
             }
         }
