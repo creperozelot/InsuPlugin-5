@@ -1,5 +1,6 @@
 package de.creperozelot.listener;
 
+import cn.nukkit.scheduler.Task;
 import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
 import cn.nukkit.Player;
@@ -11,7 +12,7 @@ import cn.nukkit.event.player.PlayerMoveEvent;
 import cn.nukkit.math.Vector3;
 import cn.nukkit.potion.Effect;
 
-public class MoveListener implements Listener {
+public class MoveListener implements Listener{
     private creperozelot plugin;
 
     public MoveListener(creperozelot plugin) {

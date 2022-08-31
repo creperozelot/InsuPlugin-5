@@ -1,3 +1,24 @@
+#  ██╗███╗   ██╗███████╗██╗   ██╗    ███████╗
+#  ██║████╗  ██║██╔════╝██║   ██║    ██╔════╝
+#  ██║██╔██╗ ██║███████╗██║   ██║    ███████╗
+#  ██║██║╚██╗██║╚════██║██║   ██║    ╚════██║
+#  ██║██║ ╚████║███████║╚██████╔╝    ███████║
+#  ╚═╝╚═╝  ╚═══╝╚══════╝ ╚═════╝     ╚══════╝
+# Hier kannst du ein paar Einstellungen für das Insu Plugin machen.
+
+
+
+# Hier kannst du den Hoster des Events Festlgeen
+hoster: 'creperozelot'
+
+# Hier kannst du den Wilkommens Titel von Insu ändern
+
+title:
+    join:
+        title: '&6&lWillkommen bei'
+        subtitle: '&a&lIN&2&lSU&r&4&l 5'
+
+# Diese Variablen NICHT verändern | Do NOT edit this Variables
 start: false
 test: false
-hoster: 'creperozelot'
+Config-Version: 1.1

@@ -27,11 +27,14 @@ public class Commandsethost extends Command {
 
             if (player.hasPermission("insu.admin.sethost")) {
 
-                creperozelot.getInstance().getConfig().set("hoster", hoster);
-                creperozelot.getInstance().getConfig().save();
-                player.sendMessage(creperozelot.prefix + "&fDu hast den Hoster erfolgreich auf &a" + creperozelot.getInstance().getConfig().getString("hoster") + " &fgesetzt.");
+                if (hoster.length() > 2) {
+                    creperozelot.getInstance().getConfig().set("hoster", hoster);
+                    creperozelot.getInstance().getConfig().save();
+                    player.sendMessage(creperozelot.prefix + "&fDu hast den Hoster erfolgreich auf &a" + creperozelot.getInstance().getConfig().getString("hoster") + " &fgesetzt.");
 
-
+                } else {
+                    player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&cDu musst mind. 3 Zeichen Angeben."));
+                }
             } else {
                 commandSender.sendMessage("&cDu hast keine Berechtigung für diesen Command.");
             }
