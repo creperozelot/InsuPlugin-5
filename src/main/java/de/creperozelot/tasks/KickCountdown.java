@@ -11,7 +11,7 @@ public class KickCountdown extends Task {
             if (player != null && (
                     !player.isOp())) {
                 Server.getInstance().removeWhitelist(player.getName());
-                Server.getInstance().getLogger().info((new creperozelot()).prefix + player.getDisplayName() + " gekickt, da der Spieler gestorben ist!");
+                Server.getInstance().getLogger().info((creperozelot.prefix + player.getDisplayName() + " gekickt, da der Spieler gestorben ist!"));
                 player.kick("bist ausgeschieden!\nGlbeim nMal.", false);
             }
 

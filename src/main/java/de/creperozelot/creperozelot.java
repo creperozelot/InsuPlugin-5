@@ -11,7 +11,9 @@ import cn.nukkit.utils.TextFormat;
 import de.creperozelot.Interface.InsuInterfaceActions;
 import de.creperozelot.commands.*;
 import de.creperozelot.listener.*;
+import de.creperozelot.start.StartFreze;
 import de.creperozelot.tasks.CheckTasks;
+import de.creperozelot.tasks.StartCountDown;
 import de.creperozelot.tasks.WatingForHost;
 
 public class creperozelot extends PluginBase {
@@ -58,16 +60,18 @@ public class creperozelot extends PluginBase {
     }
     private void registerCommand(){
         SimpleCommandMap commandMap = this.getServer().getCommandMap();
-        commandMap.register("hilfe", new CommandTeleport("tpp", "Teleportiert dich zu einem bestimten Spieler.", creperozelot.colorize("&cUsage: /tpp <name>"), new String[]{"teleportplayer"}));
-        commandMap.register("hilfe", new CommandSpectate("spectate", "Setzt dich in den Zuschauermodus", creperozelot.colorize("&cUsage: /spectate"), new String[]{"spec"}));
-        commandMap.register("hilfe", new Commandsethost("sethost", "Setzt den Host oder auch gennant denn GameMaster", creperozelot.colorize("&cUsage: /sethost <name>"), new String[]{"seth"}));
-        commandMap.register("hilfe", new CommandHelp("insu help", "Zeigt die Hilfe Nachricht für das Insu Plugin an.", creperozelot.colorize("&cUsage: /hilfe"), new String[]{"?", "h"}));
-        commandMap.register("hilfe", new CommandEventHotGrass("event-hotgrass", "Startet das Event HotGrass", creperozelot.colorize("&cUsage: /hotgrass"), new String[]{"hotgrass"}));
-        commandMap.register("hilfe", new CommandTest("test", "Ein Test command für Entwickler", creperozelot.colorize("&cUsage: /test"), new String[]{"dev:test"}));
-        commandMap.register("hilfe", new CommandTest2("test2", "Ein Weiterer Entwickler Command", creperozelot.colorize("&cUsage: /test2"), new String[]{"dev:test2"}));
-        commandMap.register("hilfe", new CommandStart("start", "Startet das Projekt INSU5", creperozelot.colorize("&cUsage: /start"), new String[]{"insu:start"}));
-        commandMap.register("hilfe", new CommandEventWaterdamage("event-waterdamage", "Startet das Event WaterDamge", creperozelot.colorize("&/Usage: /waterdamage"), new String[]{"waterdamage"}));
-        commandMap.register("hilfe", new CommandInterface("interface", "Öffnet das Insu Verwaltungs Interface", "§cUsage /interface", new String[]{"insu", "insuui", "adminmenu"}));
+        commandMap.register("hilfe", new CommandTeleport("insu:tpp", "Teleportiert dich zu einem bestimten Spieler.", creperozelot.colorize("&cUsage: /tpp <name>"), new String[]{"teleportplayer"}));
+        commandMap.register("hilfe", new CommandSpectate("insu:spectate", "Setzt dich in den Zuschauermodus", creperozelot.colorize("&cUsage: /spectate"), new String[]{"spec"}));
+        commandMap.register("hilfe", new Commandsethost("insu:sethost", "Setzt den Host oder auch gennant denn GameMaster", creperozelot.colorize("&cUsage: /sethost <name>"), new String[]{"seth"}));
+        commandMap.register("hilfe", new CommandHelp("insu:help", "Zeigt die Hilfe Nachricht für das Insu Plugin an.", creperozelot.colorize("&cUsage: /hilfe"), new String[]{"?", "h"}));
+        commandMap.register("hilfe", new CommandEventHotGrass("insu:hotgrass", "Startet das Event HotGrass", creperozelot.colorize("&cUsage: /hotgrass"), new String[]{"hotgrass"}));
+        commandMap.register("hilfe", new CommandTest("devinsu:test", "Ein Test command für Entwickler", creperozelot.colorize("&cUsage: /test"), new String[]{"dev:test"}));
+        commandMap.register("hilfe", new CommandTest2("devinsu:test2", "Ein Weiterer Entwickler Command", creperozelot.colorize("&cUsage: /test2"), new String[]{"dev:test2"}));
+        commandMap.register("hilfe", new CommandStart("insu:start", "Startet das Projekt INSU5", creperozelot.colorize("&cUsage: /start"), new String[]{"start"}));
+        commandMap.register("hilfe", new CommandEventWaterdamage("insu:waterdamage", "Startet das Event WaterDamge", creperozelot.colorize("&/Usage: /waterdamage"), new String[]{"waterdamage"}));
+        commandMap.register("hilfe", new CommandInterface("insu:interface", "Öffnet das Insu Verwaltungs Interface", "§cUsage /interface", new String[]{"insu", "insuui", "adminmenu"}));
+        commandMap.register("hilfe", new CommandEventLowMining("insu:mining-fatique", "Startet das Event Mining Fatique", "§cUsage: /insu:mining-fatique", new String[]{"mining-fatique"}));
+        commandMap.register("hilfe", new CommandUndoStart("devinsu:undostart", "Setzt START auf FALSE", "§c/Usage: /undostart", new String[]{"undostart"}));
     }
 
     //register Event
@@ -78,7 +82,7 @@ public class creperozelot extends PluginBase {
         pluginmanager.registerEvents( new PlayerDeathListener(), this);
         pluginmanager.registerEvents( new MoveListener(this), this);
         pluginmanager.registerEvents(new ChatLIstener(), this);
-        pluginmanager.registerEvents(new OnPlayerDamage(), this);
+        pluginmanager.registerEvents(new StartFreze(), this);
     }
 
     //register Tasks
@@ -86,6 +90,7 @@ public class creperozelot extends PluginBase {
         ServerScheduler scheduler = getServer().getScheduler();
         scheduler.scheduleRepeatingTask(new CheckTasks(), 20);
         scheduler.scheduleRepeatingTask((Task)new WatingForHost(), 20*2);
+        scheduler.scheduleRepeatingTask(new StartCountDown(), 20);
         getLogger().info("Registered Tasks");
     }
 

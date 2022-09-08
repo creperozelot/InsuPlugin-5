@@ -17,7 +17,7 @@ public class CheckTasks extends Task {
         if (formattedDate.equalsIgnoreCase("19:35")) {
             for (Player player : Server.getInstance().getOnlinePlayers().values()) {
                 player.kick("Aufnahmezeit ist abgelaufen!", false);
-                Server.getInstance().broadcastMessage((new creperozelot()).prefix + "Spieler wurde gekickt, da die Aufnahmezeit abgelaufen ist!");
+                Server.getInstance().broadcastMessage((creperozelot.prefix + "Spieler wurde gekickt, da die Aufnahmezeit abgelaufen ist!"));
             }
         }
     }

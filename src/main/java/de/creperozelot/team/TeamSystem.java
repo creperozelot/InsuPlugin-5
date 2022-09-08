@@ -53,16 +53,10 @@ public class TeamSystem {
             team = "DieCoolen";
         } else if (player.getName().equalsIgnoreCase("OliverLP5499")) {
             team = "DieCoolen";
-        } else if (player.getName().equalsIgnoreCase("RealSertrix")) {
-            team = "Knochenlos";
-        } else if (player.getName().equalsIgnoreCase("zICreepeR")) {
-            team = "Knochenlos";
         } else if (player.getName().equalsIgnoreCase("MaximalFlame")) {
             team = "#Vodafone";
         } else if (player.getName().equalsIgnoreCase("zeyyco")) {
             team = "#Vodafone";
-        } else if (player.getName().equalsIgnoreCase("zQumint")) {
-            team = "DerPoleUndDerItaliener";
         } else if (player.getName().equalsIgnoreCase("KilianCrafterYT")) {
             team = "DerPoleUndDerItaliener";
         } else if (player.getName().equalsIgnoreCase("LDread")) {
@@ -127,6 +121,8 @@ public class TeamSystem {
             team = "#AmogUsIstBesserAlsValo";
         } else if (player.getName().equalsIgnoreCase("DerHeroGamer007")) {
             team = "#AmogUsIstBesserAlsValo";
+        } else if (player.getName().equalsIgnoreCase("ToastbrotGHG")) {
+            team = "tutti frutti";
         }
         return team;
     }
