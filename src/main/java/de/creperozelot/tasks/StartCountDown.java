@@ -17,6 +17,62 @@ import static sun.audio.AudioPlayer.player;
 public class StartCountDown extends Task {
 
     int countdown_s = 120;
+
+    //PLayer Variables
+    Player player_creperozelot = Server.getInstance().getPlayerExact("creperozelot".toLowerCase());
+    Player GodVikthor = Server.getInstance().getPlayerExact("GodVikthor".toLowerCase());
+    Player Levi_GPP = Server.getInstance().getPlayerExact("Levi_GPP".toLowerCase());
+    Player HowLater = Server.getInstance().getPlayerExact("HowLater".toLowerCase());
+    Player JRollylp = Server.getInstance().getPlayerExact("JRollylp".toLowerCase());
+    Player GedankeAmeise1 = Server.getInstance().getPlayerExact("GedankeAmeise1".toLowerCase());
+    Player Mxllow1143 = Server.getInstance().getPlayerExact("Mxllow1143".toLowerCase());
+    Player Dilonxy = Server.getInstance().getPlayerExact("Dilonxy".toLowerCase());
+    Player UltraRobbe08 = Server.getInstance().getPlayerExact("UltraRobbe08".toLowerCase());
+    Player Wabel_Ghost = Server.getInstance().getPlayerExact("Wabel Ghost".toLowerCase());
+    Player Greenplayer_Tv = Server.getInstance().getPlayerExact("Greenplayer Tv".toLowerCase());
+    Player F0ngiMG = Server.getInstance().getPlayerExact("F0ngiMG".toLowerCase());
+    Player xF1lmx = Server.getInstance().getPlayerExact("xF1lmx".toLowerCase());
+    Player NeunMatt54321 = Server.getInstance().getPlayerExact("NeunMatt54321".toLowerCase());
+    Player OliverLP5499 = Server.getInstance().getPlayerExact("OliverLP5499".toLowerCase());
+    Player MaximalFlame = Server.getInstance().getPlayerExact("MaximalFlame".toLowerCase());
+    Player zeyyco = Server.getInstance().getPlayerExact("zeyyco".toLowerCase());
+    Player KilianCrafterYT = Server.getInstance().getPlayerExact("KilianCrafterYT".toLowerCase());
+    Player LDread = Server.getInstance().getPlayerExact("LDread".toLowerCase());
+    Player Sculky = Server.getInstance().getPlayerExact("Sculky".toLowerCase());
+    Player SMIBII_YT = Server.getInstance().getPlayerExact("SMIBII_YT".toLowerCase());
+    Player TOADENATION = Server.getInstance().getPlayerExact("TOADENATION".toLowerCase());
+    Player byknax = Server.getInstance().getPlayerExact("byknax".toLowerCase());
+    Player exzlTW = Server.getInstance().getPlayerExact("exzlTW".toLowerCase());
+    Player Qwuanda = Server.getInstance().getPlayerExact("Qwuanda".toLowerCase());
+    Player Jonas_TV5 = Server.getInstance().getPlayerExact("Jonas TV5".toLowerCase());
+    Player UltimatePhil794 = Server.getInstance().getPlayerExact("UltimatePhil794".toLowerCase());
+    Player Todesbanane1203 = Server.getInstance().getPlayerExact("Todesbanane1203".toLowerCase());
+    Player GrafTepid = Server.getInstance().getPlayerExact("GrafTepid".toLowerCase());
+    Player LitschiiYT = Server.getInstance().getPlayerExact("LitschiiYT".toLowerCase());
+    Player VictorJu4751 = Server.getInstance().getPlayerExact("VictorJu4751".toLowerCase());
+    Player NURnyraee = Server.getInstance().getPlayerExact("NURnyraee".toLowerCase());
+    Player Djalami007 = Server.getInstance().getPlayerExact("Djalami007".toLowerCase());
+    Player Straussiiii = Server.getInstance().getPlayerExact("Straussiiii".toLowerCase());
+    Player ytDoomS = Server.getInstance().getPlayerExact("ytDoomS".toLowerCase());
+    Player GunmetalNine15 = Server.getInstance().getPlayerExact("GunmetalNine15".toLowerCase());
+    Player MetallNatter2 = Server.getInstance().getPlayerExact("MetallNatter2".toLowerCase());
+    Player LodgedGuitar93 = Server.getInstance().getPlayerExact("LodgedGuitar93".toLowerCase());
+    Player IchB1nE1neB1ene = Server.getInstance().getPlayerExact("IchB1nE1neB1ene".toLowerCase());
+    Player FabiDE14 = Server.getInstance().getPlayerExact("FabiDE14".toLowerCase());
+    Player BennoMCyt = Server.getInstance().getPlayerExact("BennoMCyt".toLowerCase());
+    Player GamilinoMC = Server.getInstance().getPlayerExact("GamilinoMC".toLowerCase());
+    Player AreaNull = Server.getInstance().getPlayerExact("AreaNull".toLowerCase());
+    Player Ilyco187 = Server.getInstance().getPlayerExact("Ilyco187".toLowerCase());
+    Player Linus123455 = Server.getInstance().getPlayerExact("Linus123455".toLowerCase());
+    Player DoncaMilloLp = Server.getInstance().getPlayerExact("DoncaMilloLp".toLowerCase());
+    Player DanielGamerYt31 = Server.getInstance().getPlayerExact("DanielGamerYt31".toLowerCase());
+    Player The_Noah_YT = Server.getInstance().getPlayerExact("The Noah YT".toLowerCase());
+    Player DerHeroGamer007 = Server.getInstance().getPlayerExact("DerHeroGamer007".toLowerCase());
+    Player ToastbrotGHG = Server.getInstance().getPlayerExact("ToastbrotGHG".toLowerCase());
+    Player zPqndaFNA = Server.getInstance().getPlayerExact("zPqndaFNA".toLowerCase());
+    Player vamiiz = Server.getInstance().getPlayerExact("vamiiz".toLowerCase());
+
+
     Location fly_1 = new Location(-28, 173, -89, 1.0, 1.0);
     Location fly_2 = new Location(-139, 117, 300);
     Location fly_3 = new Location(-294, 142, -78);
@@ -53,55 +109,6 @@ public class StartCountDown extends Task {
     @Override
     public void onRun(int i) {
         for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
-            //PLayer Variables
-            Player player_creperozelot = Server.getInstance().getPlayerExact("creperozelot".toLowerCase());
-            Player HowLater = Server.getInstance().getPlayerExact("HowLater".toLowerCase());
-            Player JRollylp = Server.getInstance().getPlayerExact("JRollylp".toLowerCase());
-            Player GedankeAmeise1 = Server.getInstance().getPlayerExact("GedankeAmeise1".toLowerCase());
-            Player Mxllow1143 = Server.getInstance().getPlayerExact("Mxllow1143".toLowerCase());
-            Player Dilonxy = Server.getInstance().getPlayerExact("Dilonxy".toLowerCase());
-            Player UltraRobbe08 = Server.getInstance().getPlayerExact("UltraRobbe08".toLowerCase());
-            Player Wabel_Ghost = Server.getInstance().getPlayerExact("Wabel Ghost".toLowerCase());
-            Player Greenplayer_Tv = Server.getInstance().getPlayerExact("Greenplayer Tv".toLowerCase());
-            Player F0ngiMG = Server.getInstance().getPlayerExact("F0ngiMG".toLowerCase());
-            Player xF1lmx = Server.getInstance().getPlayerExact("xF1lmx".toLowerCase());
-            Player NeunMatt54321 = Server.getInstance().getPlayerExact("NeunMatt54321".toLowerCase());
-            Player OliverLP5499 = Server.getInstance().getPlayerExact("OliverLP5499".toLowerCase());
-            Player MaximalFlame = Server.getInstance().getPlayerExact("MaximalFlame".toLowerCase());
-            Player zeyyco = Server.getInstance().getPlayerExact("zeyyco".toLowerCase());
-            Player KilianCrafterYT = Server.getInstance().getPlayerExact("KilianCrafterYT".toLowerCase());
-            Player LDread = Server.getInstance().getPlayerExact("LDread".toLowerCase());
-            Player Sculky = Server.getInstance().getPlayerExact("Sculky".toLowerCase());
-            Player SMIBII_YT = Server.getInstance().getPlayerExact("SMIBII_YT".toLowerCase());
-            Player TOADENATION = Server.getInstance().getPlayerExact("TOADENATION".toLowerCase());
-            Player byknax = Server.getInstance().getPlayerExact("byknax".toLowerCase());
-            Player exzlTW = Server.getInstance().getPlayerExact("exzlTW".toLowerCase());
-            Player Qwuanda = Server.getInstance().getPlayerExact("Qwuanda".toLowerCase());
-            Player Jonas_TV5 = Server.getInstance().getPlayerExact("Jonas TV5".toLowerCase());
-            Player UltimatePhil794 = Server.getInstance().getPlayerExact("UltimatePhil794".toLowerCase());
-            Player Todesbanane1203 = Server.getInstance().getPlayerExact("Todesbanane1203".toLowerCase());
-            Player GrafTepid = Server.getInstance().getPlayerExact("GrafTepid".toLowerCase());
-            Player LitschiiYT = Server.getInstance().getPlayerExact("LitschiiYT".toLowerCase());
-            Player VictorJu4751 = Server.getInstance().getPlayerExact("VictorJu4751".toLowerCase());
-            Player NURnyraee = Server.getInstance().getPlayerExact("NURnyraee".toLowerCase());
-            Player Djalami007 = Server.getInstance().getPlayerExact("Djalami007".toLowerCase());
-            Player Straussiiii = Server.getInstance().getPlayerExact("Straussiiii".toLowerCase());
-            Player ytDoomS = Server.getInstance().getPlayerExact("ytDoomS".toLowerCase());
-            Player GunmetalNine15 = Server.getInstance().getPlayerExact("GunmetalNine15".toLowerCase());
-            Player MetallNatter2 = Server.getInstance().getPlayerExact("MetallNatter2".toLowerCase());
-            Player LodgedGuitar93 = Server.getInstance().getPlayerExact("LodgedGuitar93".toLowerCase());
-            Player IchB1nE1neB1ene = Server.getInstance().getPlayerExact("IchB1nE1neB1ene".toLowerCase());
-            Player FabiDE14 = Server.getInstance().getPlayerExact("FabiDE14".toLowerCase());
-            Player BennoMCyt = Server.getInstance().getPlayerExact("BennoMCyt".toLowerCase());
-            Player GamilinoMC = Server.getInstance().getPlayerExact("GamilinoMC".toLowerCase());
-            Player AreaNull = Server.getInstance().getPlayerExact("AreaNull".toLowerCase());
-            Player Ilyco187 = Server.getInstance().getPlayerExact("Ilyco187".toLowerCase());
-            Player Linus123455 = Server.getInstance().getPlayerExact("Linus123455".toLowerCase());
-            Player DoncaMilloLp = Server.getInstance().getPlayerExact("DoncaMilloLp".toLowerCase());
-            Player DanielGamerYt31 = Server.getInstance().getPlayerExact("DanielGamerYt31".toLowerCase());
-            Player The_Noah_YT = Server.getInstance().getPlayerExact("The Noah YT".toLowerCase());
-            Player DerHeroGamer007 = Server.getInstance().getPlayerExact("DerHeroGamer007".toLowerCase());
-            Player ToastbrotGHG = Server.getInstance().getPlayerExact("ToastbrotGHG".toLowerCase());
 
             if (StaticCache.COUNTDOWN_ACTIVE) {
 
@@ -123,7 +130,60 @@ public class StartCountDown extends Task {
                     } else if (countdown_s == 54) {
                         AllOnlinePlayers.teleport(fly_5);
                     } else if (countdown_s == 1) {
-                        //TP alle spieler zu SPAWN
+                        //TP Gamemaster
+                        player_creperozelot.teleport(spawn);
+                        GodVikthor.teleport(spawn);
+                        Levi_GPP.teleport(spawn);
+
+                        //TP Players
+                        HowLater.teleport(RollLade);
+                        JRollylp.teleport(RollLade);
+                        GedankeAmeise1.teleport(MallowWasBistDuWiederSoMad);
+                        Mxllow1143.teleport(MallowWasBistDuWiederSoMad);
+                        Dilonxy.teleport(Darkside);
+                        UltraRobbe08.teleport(Darkside);
+                        Wabel_Ghost.teleport(Pinkplayer);
+                        Greenplayer_Tv.teleport(Pinkplayer);
+                        F0ngiMG.teleport(ELEMAO);
+                        xF1lmx.teleport(ELEMAO);
+                        NeunMatt54321.teleport(DieCoolen);
+                        OliverLP5499.teleport(DieCoolen);
+                        MaximalFlame.teleport(Vodafone);
+                        zeyyco.teleport(Vodafone);
+                        KilianCrafterYT.teleport(DerPoleUndDerItaliener);
+                        LDread.teleport(L0STYS);
+                        Sculky.teleport(L0STYS);
+                        SMIBII_YT.teleport(FORRUSSIA);
+                        TOADENATION.teleport(FORRUSSIA);
+                        Qwuanda.teleport(Qajos);
+                        Jonas_TV5.teleport(Qajos);
+                        UltimatePhil794.teleport(Eulenfänger);
+                        Todesbanane1203.teleport(Eulenfänger);
+                        GrafTepid.teleport(Bigbababubatz);
+                        LitschiiYT.teleport(Bigbababubatz);
+                        VictorJu4751.teleport(DieKrabbelstube);
+                        NURnyraee.teleport(DieKrabbelstube);
+                        Djalami007.teleport(SAO);
+                        Straussiiii.teleport(SAO);
+                        ytDoomS.teleport(randomteam);
+                        GunmetalNine15.teleport(randomteam);
+                        MetallNatter2.teleport(Heheheha);
+                        LodgedGuitar93.teleport(Heheheha);
+                        IchB1nE1neB1ene.teleport(Ingodingos);
+                        FabiDE14.teleport(Ingodingos);
+                        BennoMCyt.teleport(GamilinoUndBenno);
+                        GamilinoMC.teleport(GamilinoUndBenno);
+                        AreaNull.teleport(Tam_Plums);
+                        Ilyco187.teleport(Tam_Plums);
+                        Linus123455.teleport(KeineAhnung);
+                        DoncaMilloLp.teleport(KeineAhnung);
+                        DanielGamerYt31.teleport(Gamatisch);
+                        The_Noah_YT.teleport(AmogUsIstBesserAlsValo);
+                        DerHeroGamer007.teleport(AmogUsIstBesserAlsValo);
+                        zPqndaFNA.teleport(NoYTRank);
+                        vamiiz.teleport(NoYTRank);
+                        ToastbrotGHG.teleport(tutti_frutti);
+
                         AllOnlinePlayers.teleport(spawn);
                         AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&aWarten das Hoster Befehl zum Teleport giebt..."));
                     }
