@@ -1,76 +1,17 @@
 package de.creperozelot.tasks;
 
-import cn.nukkit.event.EventHandler;
 import cn.nukkit.level.Location;
 import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
 import cn.nukkit.Player;
 import cn.nukkit.Server;
 import cn.nukkit.scheduler.Task;
-import io.netty.channel.AbstractEventLoop;
-
-import java.util.concurrent.TimeUnit;
-
-import static sun.audio.AudioPlayer.player;
 
 
 public class StartCountDown extends Task {
 
     int countdown_s = 120;
 
-    //PLayer Variables
-    Player player_creperozelot = Server.getInstance().getPlayerExact("creperozelot".toLowerCase());
-    Player GodVikthor = Server.getInstance().getPlayerExact("GodVikthor".toLowerCase());
-    Player Levi_GPP = Server.getInstance().getPlayerExact("Levi_GPP".toLowerCase());
-    Player HowLater = Server.getInstance().getPlayerExact("HowLater".toLowerCase());
-    Player JRollylp = Server.getInstance().getPlayerExact("JRollylp".toLowerCase());
-    Player GedankeAmeise1 = Server.getInstance().getPlayerExact("GedankeAmeise1".toLowerCase());
-    Player Mxllow1143 = Server.getInstance().getPlayerExact("Mxllow1143".toLowerCase());
-    Player Dilonxy = Server.getInstance().getPlayerExact("Dilonxy".toLowerCase());
-    Player UltraRobbe08 = Server.getInstance().getPlayerExact("UltraRobbe08".toLowerCase());
-    Player Wabel_Ghost = Server.getInstance().getPlayerExact("Wabel Ghost".toLowerCase());
-    Player Greenplayer_Tv = Server.getInstance().getPlayerExact("Greenplayer Tv".toLowerCase());
-    Player F0ngiMG = Server.getInstance().getPlayerExact("F0ngiMG".toLowerCase());
-    Player xF1lmx = Server.getInstance().getPlayerExact("xF1lmx".toLowerCase());
-    Player NeunMatt54321 = Server.getInstance().getPlayerExact("NeunMatt54321".toLowerCase());
-    Player OliverLP5499 = Server.getInstance().getPlayerExact("OliverLP5499".toLowerCase());
-    Player MaximalFlame = Server.getInstance().getPlayerExact("MaximalFlame".toLowerCase());
-    Player zeyyco = Server.getInstance().getPlayerExact("zeyyco".toLowerCase());
-    Player KilianCrafterYT = Server.getInstance().getPlayerExact("KilianCrafterYT".toLowerCase());
-    Player LDread = Server.getInstance().getPlayerExact("LDread".toLowerCase());
-    Player Sculky = Server.getInstance().getPlayerExact("Sculky".toLowerCase());
-    Player SMIBII_YT = Server.getInstance().getPlayerExact("SMIBII_YT".toLowerCase());
-    Player TOADENATION = Server.getInstance().getPlayerExact("TOADENATION".toLowerCase());
-    Player byknax = Server.getInstance().getPlayerExact("byknax".toLowerCase());
-    Player exzlTW = Server.getInstance().getPlayerExact("exzlTW".toLowerCase());
-    Player Qwuanda = Server.getInstance().getPlayerExact("Qwuanda".toLowerCase());
-    Player Jonas_TV5 = Server.getInstance().getPlayerExact("Jonas TV5".toLowerCase());
-    Player UltimatePhil794 = Server.getInstance().getPlayerExact("UltimatePhil794".toLowerCase());
-    Player Todesbanane1203 = Server.getInstance().getPlayerExact("Todesbanane1203".toLowerCase());
-    Player GrafTepid = Server.getInstance().getPlayerExact("GrafTepid".toLowerCase());
-    Player LitschiiYT = Server.getInstance().getPlayerExact("LitschiiYT".toLowerCase());
-    Player VictorJu4751 = Server.getInstance().getPlayerExact("VictorJu4751".toLowerCase());
-    Player NURnyraee = Server.getInstance().getPlayerExact("NURnyraee".toLowerCase());
-    Player Djalami007 = Server.getInstance().getPlayerExact("Djalami007".toLowerCase());
-    Player Straussiiii = Server.getInstance().getPlayerExact("Straussiiii".toLowerCase());
-    Player ytDoomS = Server.getInstance().getPlayerExact("ytDoomS".toLowerCase());
-    Player GunmetalNine15 = Server.getInstance().getPlayerExact("GunmetalNine15".toLowerCase());
-    Player MetallNatter2 = Server.getInstance().getPlayerExact("MetallNatter2".toLowerCase());
-    Player LodgedGuitar93 = Server.getInstance().getPlayerExact("LodgedGuitar93".toLowerCase());
-    Player IchB1nE1neB1ene = Server.getInstance().getPlayerExact("IchB1nE1neB1ene".toLowerCase());
-    Player FabiDE14 = Server.getInstance().getPlayerExact("FabiDE14".toLowerCase());
-    Player BennoMCyt = Server.getInstance().getPlayerExact("BennoMCyt".toLowerCase());
-    Player GamilinoMC = Server.getInstance().getPlayerExact("GamilinoMC".toLowerCase());
-    Player AreaNull = Server.getInstance().getPlayerExact("AreaNull".toLowerCase());
-    Player Ilyco187 = Server.getInstance().getPlayerExact("Ilyco187".toLowerCase());
-    Player Linus123455 = Server.getInstance().getPlayerExact("Linus123455".toLowerCase());
-    Player DoncaMilloLp = Server.getInstance().getPlayerExact("DoncaMilloLp".toLowerCase());
-    Player DanielGamerYt31 = Server.getInstance().getPlayerExact("DanielGamerYt31".toLowerCase());
-    Player The_Noah_YT = Server.getInstance().getPlayerExact("The Noah YT".toLowerCase());
-    Player DerHeroGamer007 = Server.getInstance().getPlayerExact("DerHeroGamer007".toLowerCase());
-    Player ToastbrotGHG = Server.getInstance().getPlayerExact("ToastbrotGHG".toLowerCase());
-    Player zPqndaFNA = Server.getInstance().getPlayerExact("zPqndaFNA".toLowerCase());
-    Player vamiiz = Server.getInstance().getPlayerExact("vamiiz".toLowerCase());
 
 
     Location fly_1 = new Location(-28, 173, -89, 1.0, 1.0);
@@ -108,15 +49,75 @@ public class StartCountDown extends Task {
 
     @Override
     public void onRun(int i) {
+
+        //PLayer Variables
+        Player player_creperozelot = Server.getInstance().getPlayerExact("creperozelot");
+        Player GodVikthor = Server.getInstance().getPlayerExact("GodVikthor");
+        Player Levi_GPP = Server.getInstance().getPlayerExact("Levi_GPP");
+        Player HowLater = Server.getInstance().getPlayerExact("HowLater");
+        Player JRollylp = Server.getInstance().getPlayerExact("JRollylp");
+        Player GedankeAmeise1 = Server.getInstance().getPlayerExact("GedankeAmeise1");
+        Player Mxllow1143 = Server.getInstance().getPlayerExact("Mxllow1143");
+        Player Dilonxy = Server.getInstance().getPlayerExact("Dilonxy");
+        Player UltraRobbe08 = Server.getInstance().getPlayerExact("UltraRobbe08");
+        Player Wabel_Ghost = Server.getInstance().getPlayerExact("Wabel Ghost");
+        Player Greenplayer_Tv = Server.getInstance().getPlayerExact("Greenplayer Tv");
+        Player F0ngiMG = Server.getInstance().getPlayerExact("F0ngiMG");
+        Player xF1lmx = Server.getInstance().getPlayerExact("xF1lmx");
+        Player NeunMatt54321 = Server.getInstance().getPlayerExact("NeunMatt54321");
+        Player OliverLP5499 = Server.getInstance().getPlayerExact("OliverLP5499");
+        Player MaximalFlame = Server.getInstance().getPlayerExact("MaximalFlame");
+        Player zeyyco = Server.getInstance().getPlayerExact("zeyyco");
+        Player KilianCrafterYT = Server.getInstance().getPlayerExact("KilianCrafterYT");
+        Player LDread = Server.getInstance().getPlayerExact("LDread");
+        Player Sculky = Server.getInstance().getPlayerExact("Sculky");
+        Player SMIBII_YT = Server.getInstance().getPlayerExact("SMIBII_YT");
+        Player TOADENATION = Server.getInstance().getPlayerExact("TOADENATION");
+        Player Qwuanda = Server.getInstance().getPlayerExact("Qwuanda");
+        Player Jonas_TV5 = Server.getInstance().getPlayerExact("Jonas TV5");
+        Player UltimatePhil794 = Server.getInstance().getPlayerExact("UltimatePhil794");
+        Player Todesbanane1203 = Server.getInstance().getPlayerExact("Todesbanane1203");
+        Player GrafTepid = Server.getInstance().getPlayerExact("GrafTepid");
+        Player LitschiiYT = Server.getInstance().getPlayerExact("LitschiiYT");
+        Player VictorJu4751 = Server.getInstance().getPlayerExact("VictorJu4751");
+        Player NURnyraee = Server.getInstance().getPlayerExact("NURnyraee");
+        Player Djalami007 = Server.getInstance().getPlayerExact("Djalami007");
+        Player Straussiiii = Server.getInstance().getPlayerExact("Straussiiii");
+        Player ytDoomS = Server.getInstance().getPlayerExact("ytDoomS");
+        Player GunmetalNine15 = Server.getInstance().getPlayerExact("GunmetalNine15");
+        Player MetallNatter2 = Server.getInstance().getPlayerExact("MetallNatter2");
+        Player LodgedGuitar93 = Server.getInstance().getPlayerExact("LodgedGuitar93");
+        Player IchB1nE1neB1ene = Server.getInstance().getPlayerExact("IchB1nE1neB1ene");
+        Player FabiDE14 = Server.getInstance().getPlayerExact("FabiDE14");
+        Player BennoMCyt = Server.getInstance().getPlayerExact("BennoMCyt");
+        Player GamilinoMC = Server.getInstance().getPlayerExact("GamilinoMC");
+        Player AreaNull = Server.getInstance().getPlayerExact("AreaNull");
+        Player Ilyco187 = Server.getInstance().getPlayerExact("Ilyco187");
+        Player Linus123455 = Server.getInstance().getPlayerExact("Linus123455");
+        Player DoncaMilloLp = Server.getInstance().getPlayerExact("DoncaMilloLp");
+        Player DanielGamerYt31 = Server.getInstance().getPlayerExact("DanielGamerYt31");
+        Player The_Noah_YT = Server.getInstance().getPlayerExact("The Noah YT");
+        Player DerHeroGamer007 = Server.getInstance().getPlayerExact("DerHeroGamer007");
+        Player ToastbrotGHG = Server.getInstance().getPlayerExact("ToastbrotGHG");
+        Player zPqndaFNA = Server.getInstance().getPlayerExact("zPqndaFNA");
+        Player vamiiz = Server.getInstance().getPlayerExact("vamiiz");
+        
         for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
 
             if (StaticCache.COUNTDOWN_ACTIVE) {
+
+                if (countdown_s == 0) {
+                    StaticCache.START_FREZE = false;
+                    StaticCache.COUNTDOWN_ACTIVE = false;
+                    AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&PVP ist für heute &cDeaktiviert"));
+                }
 
                 if (countdown_s > 0) {
                     countdown_s--;
 
                     if (countdown_s == 120 || countdown_s == 100 || countdown_s == 60 || countdown_s == 30 || countdown_s == 20 || countdown_s <= 10) {
                         AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&a&lIN&2&lSU&r&f Startet in &a" + countdown_s + "&f Sekunden"));
+                        AllOnlinePlayers.sendTitle(creperozelot.colorize("&6Insu Startet in"), creperozelot.colorize("&a" + countdown_s + "&fSekunden"));
                     } else if (countdown_s == 75) {
                         StaticCache.START_FREZE = true;
                         AllOnlinePlayers.setGamemode(3);
@@ -129,12 +130,11 @@ public class StartCountDown extends Task {
                         AllOnlinePlayers.teleport(fly_4);
                     } else if (countdown_s == 54) {
                         AllOnlinePlayers.teleport(fly_5);
-                    } else if (countdown_s == 1) {
+                    } else if (countdown_s == 15) {
                         //TP Gamemaster
                         player_creperozelot.teleport(spawn);
                         GodVikthor.teleport(spawn);
                         Levi_GPP.teleport(spawn);
-
                         //TP Players
                         HowLater.teleport(RollLade);
                         JRollylp.teleport(RollLade);
@@ -188,9 +188,6 @@ public class StartCountDown extends Task {
                         AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&aWarten das Hoster Befehl zum Teleport giebt..."));
                     }
 
-                } else {
-                    StaticCache.START_FREZE = false;
-                    StaticCache.COUNTDOWN_ACTIVE = false;
                 }
             }
         }
