@@ -109,7 +109,7 @@ public class StartCountDown extends Task {
                 if (countdown_s == 0) {
                     StaticCache.START_FREZE = false;
                     StaticCache.COUNTDOWN_ACTIVE = false;
-                    AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&PVP ist für heute &cDeaktiviert"));
+                    AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&ePVP &fist für heute &cDeaktiviert"));
                 }
 
                 if (countdown_s > 0) {
@@ -184,8 +184,7 @@ public class StartCountDown extends Task {
                         vamiiz.teleport(NoYTRank);
                         ToastbrotGHG.teleport(tutti_frutti);
 
-                        AllOnlinePlayers.teleport(spawn);
-                        AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&aWarten das Hoster Befehl zum Teleport giebt..."));
+                        AllOnlinePlayers.setGamemode(0);
                     }
 
                 }
