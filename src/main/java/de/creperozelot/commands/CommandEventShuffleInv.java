@@ -183,7 +183,6 @@ public class CommandEventShuffleInv extends Command {
                 JRollylpi++;
             }
 
-            //invchaos GedankeAmeise1
             PlayerInventory GedankeAmeise1inventory = GedankeAmeise1.getInventory();
             List<Item> GedankeAmeise1list = new ArrayList<>(GedankeAmeise1inventory.getContents().values());
             Collections.shuffle(GedankeAmeise1list);
@@ -194,6 +193,35 @@ public class CommandEventShuffleInv extends Command {
                 GedankeAmeise1i++;
             }
 
+            PlayerInventory Mxllow1143Inventory = Mxllow1143.getInventory();
+            List<Item> Mxllow1143List = new ArrayList<>(Mxllow1143Inventory.getContents().values());
+            Collections.shuffle(GedankeAmeise1list);
+            Map<Integer, Item> Mxllow1143Contents = new HashMap<>();
+            int Mxllow1143i = 0;
+            for (Item item : Mxllow1143List) {
+                Mxllow1143Contents.put(Integer.valueOf(Mxllow1143i), item);
+                Mxllow1143i++;
+            }
+
+            PlayerInventory DilonxyInventory = Dilonxy.getInventory();
+            List<Item> DilonxyList = new ArrayList<>(DilonxyInventory.getContents().values());
+            Collections.shuffle(DilonxyList);
+            Map<Integer, Item> DilonxyContents = new HashMap<>();
+            int Dilonxyi = 0;
+            for (Item item : DilonxyList) {
+                DilonxyContents.put(Integer.valueOf(Dilonxyi), item);
+                Dilonxyi++;
+            }
+
+            PlayerInventory UltraRobbe08Inventory = UltraRobbe08.getInventory();
+            List<Item> UltraRobbe08List = new ArrayList<>(UltraRobbe08Inventory.getContents().values());
+            Collections.shuffle(UltraRobbe08List);
+            Map<Integer, Item> UltraRobbe08Contents = new HashMap<>();
+            int UltraRobbe08i = 0;
+            for (Item item : UltraRobbe08List) {
+                UltraRobbe08Contents.put(Integer.valueOf(UltraRobbe08i), item);
+                UltraRobbe08i++;
+            }
             return true;
         }
 
