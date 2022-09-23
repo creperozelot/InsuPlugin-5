@@ -19,6 +19,61 @@ title:
         subtitle: '&a&lIN&2&lSU&r&4&l 5'
 
 # Diese Variablen NICHT verändern | Do NOT edit this Variables
+
+# Spieler Variablen
+started:
+    players:
+        HowLater: false
+        JRollylp: false
+        GedankeAmeise1: false
+        Mxllow1143: false
+        Dilonxy: false
+        UltraRobbe08: false
+        Wabel_Ghost: false
+        Greenplayer_Tv: false
+        F0ngiMG: false
+        xF1lmx: false
+        NeunMatt54321: false
+        OliverLP5499: false
+        MaximalFlame: false
+        zeyyco: false
+        KilianCrafterYT: false
+        LDread: false
+        Sculky: false
+        SMIBII_YT: false
+        TOADENATION: false
+        Qwuanda: false
+        Jonas_TV5: false
+        UltimatePhil794: false
+        Todesbanane1203: false
+        GrafTepid: false
+        LitschiiYT: false
+        VictorJu4751: false
+        NURnyraee: false
+        Djalami007: false
+        Straussiiii: false
+        ytDoomS: false
+        GunmetalNine15: false
+        MetallNatter2: false
+        LodgedGuitar93: false
+        IchB1nE1neB1ene: false
+        FabiDE14: false
+        BennoMCyt: false
+        GamilinoMC: false
+        AreaNull: false
+        Ilyco187: false
+        Linus123455: false
+        DoncaMilloLp: false
+        DanielGamerYt31: false
+        The_Noah_YT: false
+        DerHeroGamer007: false
+        ToastbrotGHG: false
+        zPqndaFNA: false
+        Vamiiz: false
+        F3yson HD: false
+        zCrxyy: false
+
+# Allgemeine Dev Variablen
 start: false
 test: false
-Config-Version: 1.1
+Config-Version: 1.2
