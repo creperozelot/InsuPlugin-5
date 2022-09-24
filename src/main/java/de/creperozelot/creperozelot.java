@@ -73,6 +73,7 @@ public class creperozelot extends PluginBase {
         commandMap.register("hilfe", new CommandEventLowMining("insu:mining-fatique", "Startet das Event Mining Fatique", "§cUsage: /insu:mining-fatique", new String[]{"mining-fatique"}));
         commandMap.register("hilfe", new CommandUndoStart("devinsu:undostart", "Setzt START auf FALSE", "§c/Usage: /undostart", new String[]{"undostart"}));
         commandMap.register("hilfe", new CommandInterface("insu:interface", "Öffnet das INSU verwaltungs Interface", "§c/Usage: /interface", new String[]{"iinsuui", "ui", "events", "i", "insu"}));
+        commandMap.register("hilfe", new CommandTeleportUI("insu:tpui", "Teleportier dich zu einem Spieler", "§cUsage: /tpui", new String[]{"tpui", "teleportui", "teleportinterface"}));
     }
 
     //register Event

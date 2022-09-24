@@ -18,6 +18,29 @@ title:
         title: '&6&lWillkommen bei'
         subtitle: '&a&lIN&2&lSU&r&4&l 5'
 
+# Event Cooldown (Sollte üver 60 Sekunden liegen)
+cooldown: 60
+
+# Start Countdown in Sekunden (Sollte über 120 Sekunden liegen)
+countdown: 120
+
+# Todes Nachrichten
+SUFFOCATION: '{Player} Suffocated in wall'
+FALL: '{Player} Jumped off the roof'
+FIRE: '{Player} burned'
+FIRE_TICK: '{Player} burned'
+LAVA: '{Player} swam in lava'
+DROWNING: '{Player} drowned'
+BLOCK_EXPLOSION: '{Player} Blew to pieces'
+ENTITY_EXPLOSION: '{Player} Blew to pieces by {Attacker}'
+LIGHTNING:  '{Player} electrocuted'
+VOID:    '{Player} went over the edge'
+SUICIDE: '{Player} suicided'
+MAGIC: '{Player} cursed'
+KILL_BY_WEAPON: '{Player} got killed by {Attacker} using {WeaponName}'
+MOB_ATTACK: '{Player} got killed by {Attacker}'
+PROJECTILE: '{Player} got shot by {Attacker}'
+
 # Diese Variablen NICHT verändern | Do NOT edit this Variables
 
 # Spieler Variablen

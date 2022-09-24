@@ -5,8 +5,10 @@ import cn.nukkit.Server;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
 import cn.nukkit.event.player.PlayerFormRespondedEvent;
+import cn.nukkit.form.window.FormWindowCustom;
 import cn.nukkit.form.window.FormWindowSimple;
 import cn.nukkit.level.Level;
+import cn.nukkit.level.Location;
 import cn.nukkit.level.Sound;
 import cn.nukkit.potion.Effect;
 import de.creperozelot.StaticCache;
@@ -384,7 +386,30 @@ public class InterfaceListener implements Listener {
             if (responseName.equals("Lootdrop")) {
 
             }
+
         }
+
     }
+    //Begin TpUI
+    @EventHandler
+    public void onTeleportResponseUI(PlayerFormRespondedEvent event) {
+        Player p = event.getPlayer();
+        if (event.getWindow() instanceof FormWindowCustom) {
+            FormWindowCustom window = (FormWindowCustom)event.getWindow();
+            if (event.getFormID() == 178913281) {
+                if (event.wasClosed())
+                    return;
+                String response = window.getResponse().getDropdownResponse(0).getElementContent();
+                Player player = Server.getInstance().getPlayer(response);
+                if (player instanceof Player) {
+                    p.teleport((Location)player);
+                    p.sendMessage(creperozelot.prefix + creperozelot.colorize("Teleport zu &a") + player.getName() + creperozelot.colorize(" &ferfolgreich"));
+                    return;
+                }
+                p.sendMessage(creperozelot.prefix + "Player is not online");
+                return;
+            }
+            }
+        }
 
 }

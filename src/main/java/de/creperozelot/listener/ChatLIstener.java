@@ -20,13 +20,13 @@ public class ChatLIstener implements Listener {
 
 
         if (player.getName().equalsIgnoreCase("creperozelot")) {
-            event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> &e" + message);
+            event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> §e" + message);
         } else if (player.getName().equalsIgnoreCase("TOADENATION")) {
-            event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> &e" + message);
+            event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> §e" + message);
         } else if (player.getName().equalsIgnoreCase("GodVikthor")) {
-            event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> &e" + message);
+            event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> §e" + message);
         } else {
-            event.setFormat(creperozelot.prefix + player.getDisplayName() + ">>" + message);
+            event.setFormat(creperozelot.prefix + player.getDisplayName() + ">> " + message);
         }
     }
 }

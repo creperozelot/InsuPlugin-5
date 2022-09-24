@@ -117,7 +117,7 @@ public class StartCountDown extends Task {
 
                     if (countdown_s == 120 || countdown_s == 100 || countdown_s == 60 || countdown_s == 30 || countdown_s == 20 || countdown_s <= 10) {
                         AllOnlinePlayers.sendMessage(creperozelot.prefix + creperozelot.colorize("&a&lIN&2&lSU&r&f Startet in &a" + countdown_s + "&f Sekunden"));
-                        AllOnlinePlayers.sendTitle(creperozelot.colorize("&6Insu Startet in"), creperozelot.colorize("&a" + countdown_s + "&fSekunden"));
+                        AllOnlinePlayers.sendTitle(creperozelot.colorize("&6Insu Startet in &a") + countdown_s + creperozelot.colorize(" &fSekunden"));
                     } else if (countdown_s == 75) {
                         StaticCache.START_FREZE = true;
                         AllOnlinePlayers.setGamemode(3);
@@ -184,7 +184,7 @@ public class StartCountDown extends Task {
                         vamiiz.teleport(NoYTRank);
                         ToastbrotGHG.teleport(tutti_frutti);
 
-                        AllOnlinePlayers.setGamemode(0);
+                        AllOnlinePlayers.setGamemode(Player.SURVIVAL);
                     }
 
                 }
