@@ -19,7 +19,7 @@ public class WatingForHost extends Task {
                     player.sendActionBar(creperozelot.colorize("&a&lWarte auf Host | " + Server.getInstance().getOnlinePlayers().values().size() + " &a&lSpieler Online"), 0, 5, 1);
 
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        TimeUnit.SECONDS.sleep(2);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -27,7 +27,7 @@ public class WatingForHost extends Task {
                     player.sendActionBar(creperozelot.colorize("&a&lWarte auf Host. | " + Server.getInstance().getOnlinePlayers().values().size() + " &a&lSpieler Online"), 0, 5, 1);
 
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        TimeUnit.SECONDS.sleep(2);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -35,7 +35,7 @@ public class WatingForHost extends Task {
                     player.sendActionBar(creperozelot.colorize("&a&lWarte auf Host.. | " + Server.getInstance().getOnlinePlayers().values().size() + " &a&lSpieler Online"), 0, 5, 1);
 
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        TimeUnit.SECONDS.sleep(2);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -45,7 +45,7 @@ public class WatingForHost extends Task {
                     player.sendActionBar(creperozelot.colorize("&a&lWarte auf Start | " + Server.getInstance().getOnlinePlayers().values().size() + " &a&lSpieler Online"), 0, 5, 1);
 
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        TimeUnit.SECONDS.sleep(2);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -53,7 +53,7 @@ public class WatingForHost extends Task {
                     player.sendActionBar(creperozelot.colorize("&a&lWarte auf Start. | " + Server.getInstance().getOnlinePlayers().values().size() + " &a&lSpieler Online"), 0, 5, 1);
 
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        TimeUnit.SECONDS.sleep(2);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }
@@ -61,7 +61,7 @@ public class WatingForHost extends Task {
                     player.sendActionBar(creperozelot.colorize("&a&lWarte auf Start.. | " + Server.getInstance().getOnlinePlayers().values().size() + " &a&lSpieler Online"), 0, 5, 1);
 
                     try {
-                        TimeUnit.SECONDS.sleep(1);
+                        TimeUnit.SECONDS.sleep(2);
                     } catch (InterruptedException e) {
                         throw new RuntimeException(e);
                     }

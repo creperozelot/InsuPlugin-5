@@ -222,6 +222,97 @@ public class CommandEventShuffleInv extends Command {
                 UltraRobbe08Contents.put(Integer.valueOf(UltraRobbe08i), item);
                 UltraRobbe08i++;
             }
+
+            PlayerInventory Wabel_GhostInventory = Wabel_Ghost.getInventory();
+            List<Item> Wabel_GhostList = new ArrayList<>(Wabel_GhostInventory.getContents().values());
+            Collections.shuffle(Wabel_GhostList);
+            Map<Integer, Item> Wabel_GhostContents = new HashMap<>();
+            int Wabel_Ghosti = 0;
+            for (Item item : Wabel_GhostList) {
+                Wabel_GhostContents.put(Integer.valueOf(Wabel_Ghosti), item);
+                Wabel_Ghosti++;
+            }
+
+            PlayerInventory Greenplayer_TvInventory = Greenplayer_Tv.getInventory();
+            List<Item> Greenplayer_TvList = new ArrayList<>(Greenplayer_TvInventory.getContents().values());
+            Collections.shuffle(Greenplayer_TvList);
+            Map<Integer, Item> Greenplayer_TvContents = new HashMap<>();
+            int Greenplayer_Tvi = 0;
+            for (Item item : Greenplayer_TvList) {
+                Greenplayer_TvContents.put(Integer.valueOf(Greenplayer_Tvi), item);
+                Greenplayer_Tvi++;
+            }
+
+            PlayerInventory F0ngiMGInventory = F0ngiMG.getInventory();
+            List<Item> F0ngiMGList = new ArrayList<>(F0ngiMGInventory.getContents().values());
+            Collections.shuffle(F0ngiMGList);
+            Map<Integer, Item> F0ngiMGContents = new HashMap<>();
+            int F0ngiMGi = 0;
+            for (Item item : F0ngiMGList) {
+                F0ngiMGContents.put(Integer.valueOf(F0ngiMGi), item);
+                F0ngiMGi++;
+            }
+
+            PlayerInventory xF1lmxInventory = xF1lmx.getInventory();
+            List<Item> xF1lmxList = new ArrayList<>(xF1lmxInventory.getContents().values());
+            Collections.shuffle(xF1lmxList);
+            Map<Integer, Item>xF1lmxContents = new HashMap<>();
+            int xF1lmxi = 0;
+            for (Item item : xF1lmxList) {
+                xF1lmxContents.put(Integer.valueOf(xF1lmxi), item);
+                xF1lmxi++;
+            }
+
+            PlayerInventory NeunMatt54321Inventory = NeunMatt54321.getInventory();
+            List<Item> NeunMatt54321List = new ArrayList<>(NeunMatt54321Inventory.getContents().values());
+            Collections.shuffle(NeunMatt54321List);
+            Map<Integer, Item> NeunMatt54321Contents = new HashMap<>();
+            int NeunMatt54321i = 0;
+            for (Item item : NeunMatt54321List) {
+                NeunMatt54321Contents.put(Integer.valueOf(NeunMatt54321i), item);
+                NeunMatt54321i++;
+            }
+
+            PlayerInventory OliverLP5499Inventory = OliverLP5499.getInventory();
+            List<Item> OliverLP5499List = new ArrayList<>(OliverLP5499Inventory.getContents().values());
+            Collections.shuffle(OliverLP5499List);
+            Map<Integer, Item> OliverLP5499Contents = new HashMap<>();
+            int OliverLP5499i = 0;
+            for (Item item : OliverLP5499List) {
+                OliverLP5499Contents.put(Integer.valueOf(OliverLP5499i), item);
+                OliverLP5499i++;
+            }
+
+            PlayerInventory MaximalFlameInventory = MaximalFlame.getInventory();
+            List<Item> MaximalFlameList = new ArrayList<>(MaximalFlameInventory.getContents().values());
+            Collections.shuffle(MaximalFlameList);
+            Map<Integer, Item> MaximalFlameContents = new HashMap<>();
+            int MaximalFlamei = 0;
+            for (Item item : MaximalFlameList) {
+                MaximalFlameContents.put(Integer.valueOf(MaximalFlamei), item);
+                MaximalFlamei++;
+            }
+
+            PlayerInventory zeyycoInventory = zeyyco.getInventory();
+            List<Item> zeyycoList = new ArrayList<>(zeyycoInventory.getContents().values());
+            Collections.shuffle(zeyycoList);
+            Map<Integer, Item> zeyycoContents = new HashMap<>();
+            int zeyycoi = 0;
+            for (Item item : zeyycoList) {
+                zeyycoContents.put(Integer.valueOf(zeyycoi), item);
+                zeyycoi++;
+            }
+
+            PlayerInventory KilianCrafterYTInventory = KilianCrafterYT.getInventory();
+            List<Item> KilianCrafterYTList = new ArrayList<>(KilianCrafterYTInventory.getContents().values());
+            Collections.shuffle(KilianCrafterYTList);
+            Map<Integer, Item> KilianCrafterYTContents = new HashMap<>();
+            int KilianCrafterYTi = 0;
+            for (Item item : KilianCrafterYTList) {
+                KilianCrafterYTContents.put(Integer.valueOf(KilianCrafterYTi), item);
+                KilianCrafterYTi++;
+            }
+
             return true;
         }
 

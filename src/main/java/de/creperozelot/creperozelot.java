@@ -86,13 +86,14 @@ public class creperozelot extends PluginBase {
         pluginmanager.registerEvents(new ChatLIstener(), this);
         pluginmanager.registerEvents(new StartFreze(), this);
         pluginmanager.registerEvents(new InterfaceListener(), this);
+        pluginmanager.registerEvents(new PlayerDamageEvents(), this);
     }
 
     //register Tasks
     private void registerTasks() {
         ServerScheduler scheduler = getServer().getScheduler();
-        scheduler.scheduleRepeatingTask(new CheckTasks(), 20);
-        scheduler.scheduleRepeatingTask((Task)new WatingForHost(), 20*2);
+        scheduler.scheduleRepeatingTask(new CheckTasks(), 20*45);
+        scheduler.scheduleRepeatingTask((Task)new WatingForHost(), 20*5);
         scheduler.scheduleRepeatingTask(new StartCountDown(), 20);
         getLogger().info("Registered Tasks");
     }

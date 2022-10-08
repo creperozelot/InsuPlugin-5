@@ -1,5 +1,6 @@
 package de.creperozelot.listener;
 
+import cn.nukkit.item.Item;
 import cn.nukkit.level.Location;
 import de.creperozelot.StaticCache;
 import de.creperozelot.team.TeamSystem;
@@ -16,6 +17,8 @@ import cn.nukkit.event.player.PlayerJoinEvent;
 
 
 public class PlayerJoinListener implements Listener {
+
+
 
     @EventHandler
     public void onPlayerfirstJoin(PlayerJoinEvent event) {
@@ -263,16 +266,38 @@ public class PlayerJoinListener implements Listener {
         Player player = event.getPlayer();
         Server server = Server.getInstance();
         Level level = player.getLevel();
+        Item insuadmin = Item.get(377, 0, 1);
+        Item teleporter = Item.get(345, 0, 1);
+        insuadmin.setCustomName("§c§lINSU Manager");
+        insuadmin.setLore("§5Der §c§lINSU Manager §5Steuert die Events und anderen", "§5Wichtige funktionen.");
+        teleporter.setCustomName("§a§lTeleport System");
+        teleporter.setLore("§5Das §a§lTeleport System §5ist da um sich zu einem Spieler", "§5zu Teleportieren.");
 
         (new TeamSystem()).setTeam(player);
 
         if (player.getName().equalsIgnoreCase("GodVikthor")) {
             player.setGamemode(3);
+            player.getInventory().clearAll();
+            player.getInventory().setItem(0, insuadmin);
+            player.getInventory().setItem(4, teleporter);
         }
 
+        if (player.getName().equalsIgnoreCase("creperozelot")) {
+            player.setGamemode(3);
+            player.getInventory().clearAll();
+            player.getInventory().setItem(0, insuadmin);
+            player.getInventory().setItem(4, teleporter);
+        }
 
-        event.setJoinMessage(creperozelot.prefix + "&a" + player.getName() + " &fhat das Spiel betreten.");
-        player.sendTitle(creperozelot.colorize(creperozelot.getInstance().getConfig().getString("title.join.title", creperozelot.getInstance().getConfig().getString("title.join.subtitle"))));
+        if (player.getName().equalsIgnoreCase("Levi GPP")) {
+            player.setGamemode(3);
+            player.getInventory().clearAll();
+            player.getInventory().setItem(0, insuadmin);
+            player.getInventory().setItem(4, teleporter);
+        }
+
+        event.setJoinMessage(creperozelot.prefix + creperozelot.colorize("&a" + player.getName() + " &fhat das Spiel betreten."));
+        player.sendTitle(creperozelot.colorize(creperozelot.getInstance().getConfig().getString("title.join.title")), creperozelot.getInstance().getConfig().getString("title.join.subtitle"));
 
         server.getScheduler().scheduleDelayedTask(new Task() {
             @Override
