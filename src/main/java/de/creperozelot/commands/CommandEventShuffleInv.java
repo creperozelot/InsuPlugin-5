@@ -94,9 +94,6 @@ public class CommandEventShuffleInv extends Command {
             return true;
         }
 
-        StaticCache.EVENT_ACTIVE = true;
-        StaticCache.EVENT_BLINDNISS = true;
-
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
@@ -104,62 +101,23 @@ public class CommandEventShuffleInv extends Command {
             }
         }, 1000 * 60 * 10);
 
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                StaticCache.EVENT_MINING_FATIQUE = false;
+            }
+        }, 1000 * 60 * 2);
 
-        player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &8Blindniss&f Aktiviert."));
+        player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &e&lMining-Fatique&a Aktiviert."));
 
         for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &f&lInv-Chaos"), creperozelot.colorize("&aStart"), 10, 40, 0);
             Level level = AllOnlinePlayers.getLevel();
-
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lInv Chaos"), creperozelot.colorize("&fWird Gestartet..."), 20, 60, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(3);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lInv Chaos"), creperozelot.colorize("&fStart in &45"), 0, 40, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lInv Chaos"), creperozelot.colorize("&fStart in &c4"), 0, 40, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lInv Chaos"), creperozelot.colorize("&fStart in &e3"), 0, 40, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lInv Chaos"), creperozelot.colorize("&fStart in &22"), 0, 40, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lInv Chaos"), creperozelot.colorize("&fStart in &a1"), 0, 40, 0);
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lInv Chaos"), creperozelot.colorize("&aStart"), 0, 40, 0);
             level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
+        }
+
+        StaticCache.EVENT_SHUFFLEINV = true;
+        StaticCache.EVENT_ACTIVE = true;
 
             //invchaos HowLater
             PlayerInventory HowLaterInv = HowLater.getInventory();
@@ -315,8 +273,4 @@ public class CommandEventShuffleInv extends Command {
 
             return true;
         }
-
-        return false;
-    }
-
 }

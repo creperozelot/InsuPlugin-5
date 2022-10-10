@@ -38,8 +38,6 @@ public class CommandEventBlindniss extends Command {
             return true;
         }
 
-        StaticCache.EVENT_ACTIVE = true;
-        StaticCache.EVENT_BLINDNISS = true;
 
         new Timer().schedule(new TimerTask() {
             @Override
@@ -55,71 +53,79 @@ public class CommandEventBlindniss extends Command {
             }
         }, 1000 * 60 * 2);
 
-        player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &8Blindniss&f Aktiviert."));
-
-        for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
-            Level level = AllOnlinePlayers.getLevel();
+        player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &8&lBlindniss&a Aktiviert."));
 
 
-            new Timer().schedule(new TimerTask() {
-                @Override
-                public void run() {
-                    AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&fWird &cBeendet"), 0, 60, 40);
+        new Timer().schedule(new TimerTask() {
+            @Override
+            public void run() {
+                for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
+                    AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss &a"), creperozelot.colorize("&cWurde Beendet"), 10, 60, 40);
+                    Level level = AllOnlinePlayers.getLevel();
                     level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
                 }
-            }, 1000 * 60 * 2 + 8);
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&fWird Gestartet..."), 20, 60, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(3);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
             }
+        }, 1000 * 60 * 2);
 
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&fStart in &45"), 0, 40, 0);
+        Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &8&lBlindniss&r&a wird Gestartet..."));
 
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&fStart in &c4"), 0, 40, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&fStart in &e3"), 0, 40, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&fStart in &22"), 0, 40, 0);
-
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&fStart in &a1"), 0, 40, 0);
-            try {
-                TimeUnit.SECONDS.sleep(1);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
-            }
-
-            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&aStart"), 0, 40, 0);
-            level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
-            AllOnlinePlayers.addEffect(Effect.getEffect(15).setDuration(120).setAmplifier(5).setVisible(false));
+        try {
+            TimeUnit.SECONDS.sleep(3);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
+
+        Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &8&lBlindniss&r&a ist Aktiv in &45"));
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &8&lBlindniss&r&a ist Aktiv in &64"));
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &8&lBlindniss&r&a ist Aktiv in &e3"));
+
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &8&lBlindniss&r&a ist Aktiv in &22"));
+
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &8&lBlindniss&r&a ist Aktiv in &a1"));
+
+        try {
+            TimeUnit.SECONDS.sleep(1);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+
+        for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
+            AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&aStart"), 0, 40, 0);
+            Level level = AllOnlinePlayers.getLevel();
+            level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
+        }
+
+        StaticCache.EVENT_ACTIVE = true;
+        StaticCache.EVENT_BLINDNISS = true;
+
 
         return true;
     }
