@@ -26,7 +26,7 @@ public class ChatLIstener implements Listener {
         } else if (player.getName().equalsIgnoreCase("GodVikthor")) {
             event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> §e" + message);
         } else {
-            event.setFormat(creperozelot.prefix + player.getDisplayName() + ">> " + message);
+            event.setFormat(creperozelot.prefix + player.getDisplayName() + " >> " + message);
         }
     }
 }

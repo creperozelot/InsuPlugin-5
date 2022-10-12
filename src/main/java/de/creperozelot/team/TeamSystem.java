@@ -15,12 +15,17 @@ public class TeamSystem {
                             player.sendMessage((creperozelot.prefix + "&aDu bist im Team &4GameMaster &a und &bDeveloper"));
         //copy end
         } else if (player.getName().equalsIgnoreCase("TOADENATION")) {
-            player.setNameTag("&eGameMaster&7 x &f" + player.getName());
-                            player.sendMessage((new creperozelot()).prefix + "&aDu bist im Team &eGameMaster");
+            player.setNameTag(creperozelot.colorize("&eGameMaster&7 x &f") + player.getName());
+                            player.sendMessage(creperozelot.prefix + "&aDu bist im Team &eGameMaster");
         } else if (player.getName().equalsIgnoreCase("GodVikthor")) {
-            player.setNameTag("&4GameMaster&7 x &f" + player.getName());
-                    player.setDisplayName("&4GameMaster&7 | &f" + player.getName());
+            player.setNameTag(creperozelot.colorize("&4GameMaster&7 x &f") + player.getName());
                             player.sendMessage(creperozelot.prefix + "&aDu bist im Team &4GameMaster");
+        } else if (player.getName().equalsIgnoreCase("Levi GPP")) {
+            player.setNameTag(creperozelot.colorize("&4GameMaster&7 x &f") + player.getName());
+                     player.sendMessage(creperozelot.prefix + "&aDu bist im Team &4GameMaster");
+        } else if (player.getName().equalsIgnoreCase("Connorbryan14")) {
+            player.setNameTag(creperozelot.colorize("&4GameMaster&7 x &f") + player.getName());
+                  player.sendMessage(creperozelot.prefix + "&aDu bist im Team &4GameMaster");
         }
     }
 

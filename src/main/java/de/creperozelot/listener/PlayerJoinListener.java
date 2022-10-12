@@ -296,8 +296,22 @@ public class PlayerJoinListener implements Listener {
             player.getInventory().setItem(4, teleporter);
         }
 
+        if (player.getName().equalsIgnoreCase("Levi GPP")) {
+            player.setGamemode(3);
+            player.getInventory().clearAll();
+            player.getInventory().setItem(0, insuadmin);
+            player.getInventory().setItem(4, teleporter);
+        }
+
+        if (player.getName().equalsIgnoreCase("Connorbryan14")) {
+            player.setGamemode(3);
+            player.getInventory().clearAll();
+            player.getInventory().setItem(0, insuadmin);
+            player.getInventory().setItem(4, teleporter);
+        }
+
         event.setJoinMessage(creperozelot.prefix + creperozelot.colorize("&a" + player.getName() + " &fhat das Spiel betreten."));
-        player.sendTitle(creperozelot.colorize(creperozelot.getInstance().getConfig().getString("title.join.title")), creperozelot.getInstance().getConfig().getString("title.join.subtitle"));
+        player.sendTitle(creperozelot.colorize(creperozelot.getInstance().getConfig().getString("title.join.title")), creperozelot.colorize(creperozelot.getInstance().getConfig().getString("title.join.subtitle")));
 
         server.getScheduler().scheduleDelayedTask(new Task() {
             @Override

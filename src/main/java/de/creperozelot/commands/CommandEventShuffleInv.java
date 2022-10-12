@@ -2,7 +2,6 @@ package de.creperozelot.commands;
 
 import cn.nukkit.inventory.PlayerInventory;
 import cn.nukkit.item.Item;
-import cn.nukkit.potion.Effect;
 import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
 import cn.nukkit.Player;
@@ -19,7 +18,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.TimeUnit;
 
 public class CommandEventShuffleInv extends Command {
 
@@ -76,6 +74,7 @@ public class CommandEventShuffleInv extends Command {
     Player ToastbrotGHG = Server.getInstance().getPlayerExact("ToastbrotGHG");
     Player zPqndaFNA = Server.getInstance().getPlayerExact("zPqndaFNA");
     Player vamiiz = Server.getInstance().getPlayerExact("vamiiz");
+    Player player_creperozelot = Server.getInstance().getPlayerExact("creperozelot");
 
     @Override
     public boolean execute(CommandSender commandSender, String s, String[] args) {
@@ -119,6 +118,21 @@ public class CommandEventShuffleInv extends Command {
         StaticCache.EVENT_SHUFFLEINV = true;
         StaticCache.EVENT_ACTIVE = true;
 
+
+        for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
+            PlayerInventory AllOnlinePlayersInv = AllOnlinePlayers.getInventory();
+            List<Item> AllOnlinePlayerList = new ArrayList<>(AllOnlinePlayersInv.getContents().values());
+            Collections.shuffle(AllOnlinePlayerList);
+            Map<Integer, Item> AllOnlinePlayersContents = new HashMap<>();
+            int AllOnlinePlayersi = 0;
+            for (Item item : AllOnlinePlayerList) {
+                AllOnlinePlayersContents.put(Integer.valueOf(AllOnlinePlayersi), item);
+                AllOnlinePlayersi++;
+            }
+            AllOnlinePlayersInv.setContents(AllOnlinePlayersContents);
+            creperozelot.updateInventory(player);
+        }
+/**
             //invchaos HowLater
             PlayerInventory HowLaterInv = HowLater.getInventory();
             List<Item> HowLaterlist = new ArrayList<>(HowLaterInv.getContents().values());
@@ -270,7 +284,9 @@ public class CommandEventShuffleInv extends Command {
                 KilianCrafterYTContents.put(Integer.valueOf(KilianCrafterYTi), item);
                 KilianCrafterYTi++;
             }
+ **/
 
             return true;
         }
+
 }

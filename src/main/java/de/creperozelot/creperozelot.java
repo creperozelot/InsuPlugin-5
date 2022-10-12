@@ -1,14 +1,15 @@
 package de.creperozelot;
 
 
+import cn.nukkit.Player;
 import cn.nukkit.command.SimpleCommandMap;
+import cn.nukkit.inventory.PlayerInventory;
 import cn.nukkit.item.ItemID;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.plugin.PluginManager;
 import cn.nukkit.scheduler.ServerScheduler;
 import cn.nukkit.scheduler.Task;
 import cn.nukkit.utils.TextFormat;
-import de.creperozelot.Interface.InsuInterfaceActions;
 import de.creperozelot.commands.*;
 import de.creperozelot.listener.*;
 import de.creperozelot.start.StartFreze;
@@ -71,9 +72,13 @@ public class creperozelot extends PluginBase {
         commandMap.register("hilfe", new CommandEventWaterdamage("insu:waterdamage", "Startet das Event WaterDamge", creperozelot.colorize("&/Usage: /waterdamage"), new String[]{"waterdamage"}));
         commandMap.register("hilfe", new CommandInterface("insu:interface", "Öffnet das Insu Verwaltungs Interface", "§cUsage /interface", new String[]{"insu", "insuui", "adminmenu"}));
         commandMap.register("hilfe", new CommandEventLowMining("insu:mining-fatique", "Startet das Event Mining Fatique", "§cUsage: /insu:mining-fatique", new String[]{"mining-fatique"}));
-        commandMap.register("hilfe", new CommandUndoStart("devinsu:undostart", "Setzt START auf FALSE", "§c/Usage: /undostart", new String[]{"undostart"}));
+        commandMap.register("hilfe", new CommandUndoStart("devinsu:undostart", "Setzt START auf FALSE", "§cUsage: /undostart", new String[]{"undostart"}));
         commandMap.register("hilfe", new CommandInterface("insu:interface", "Öffnet das INSU verwaltungs Interface", "§c/Usage: /interface", new String[]{"iinsuui", "ui", "events", "i", "insu"}));
         commandMap.register("hilfe", new CommandTeleportUI("insu:tpui", "Teleportier dich zu einem Spieler", "§cUsage: /tpui", new String[]{"tpui", "teleportui", "teleportinterface"}));
+        commandMap.register("hilfe", new CommandEventBlindniss("insu:blindniss", "Staret das Event Blindniss", "§cUsage: /blindniss", new String[]{"blindniss"}));
+        commandMap.register("hife", new CommandEventShuffleInv("insu:inv-chaos", "Aktiviert das Event Inv-Chaos", "§cusage: /inv-chaos", new String[]{"inv-chaos"}));
+        commandMap.register("hilfe", new CommandEventGlueckstreffer("insu:glückstreffer", "Aktiviert das Event Glückstreffer", "§cusage:/glückstreffer", new String[]{"glückstreffer"}));
+        commandMap.register("hilfe", new CommandEventLootdrop("insu:lootdrop", "Aktiviert das Event Lootdrop", "§cUsage: /lootdrop", new String[]{"lootdrop"}));
     }
 
     //register Event
@@ -100,5 +105,17 @@ public class creperozelot extends PluginBase {
 
     public static String colorize(String msg) {
         return TextFormat.colorize('&', msg);
+    }
+
+    public static void updateArmorContents(Player player) {
+        PlayerInventory inventory = player.getInventory();
+        inventory.sendArmorContents(player);
+    }
+
+    public static void updateInventory(Player player) {
+        PlayerInventory inventory = player.getInventory();
+        updateArmorContents(player);
+        inventory.sendContents(player);
+        inventory.sendHeldItem(new Player[] { player });
     }
 }
