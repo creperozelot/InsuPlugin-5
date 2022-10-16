@@ -274,6 +274,7 @@ public class PlayerJoinListener implements Listener {
         teleporter.setLore("§5Das §a§lTeleport System §5ist da um sich zu einem Spieler", "§5zu Teleportieren.");
 
         (new TeamSystem()).setTeam(player);
+        (new TeamSystem()).setPlayerTeam(player);
 
         if (player.getName().equalsIgnoreCase("GodVikthor")) {
             player.setGamemode(3);

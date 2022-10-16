@@ -62,6 +62,26 @@ public class TeamLiveListener implements Listener {
 
         if (creperozelot.getInstance().getConfig().getBoolean("Start")) {
             //Zeigt Teammates Leben an
+            if (player.getName().equalsIgnoreCase("Connorbryan14")) ;
+            {
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist " + JRollylp.getHealth())));
+            }
+
+            if (player.getName().equalsIgnoreCase("GodVikthor")) ;
+            {
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist " + JRollylp.getHealth())));
+            }
+
+            if (player.getName().equalsIgnoreCase("Levi GPP")) ;
+            {
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist " + JRollylp.getHealth())));
+            }
+
+            if (player.getName().equalsIgnoreCase("creperozelot")) ;
+            {
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist " + JRollylp.getHealth())));
+            }
+
             if (player.getName().equalsIgnoreCase("HowLater")) ;
             {
                 player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist " + JRollylp.getHealth())));
