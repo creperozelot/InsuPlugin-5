@@ -11,7 +11,7 @@ public class PlayerQuitListener implements Listener {
     public void onPlayerQuit(PlayerQuitEvent event) {
         Player player = event.getPlayer();
 
-        event.setQuitMessage(creperozelot.prefix + "&a" + player.getName() + " &fhat das Spiel verlassen.");
+        event.setQuitMessage(creperozelot.prefix + creperozelot.colorize("&a" + player.getName() + " &fhat das Spiel verlassen."));
 
     }
 }

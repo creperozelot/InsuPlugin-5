@@ -5,26 +5,16 @@ import cn.nukkit.Server;
 import cn.nukkit.block.Block;
 import cn.nukkit.block.BlockChest;
 import cn.nukkit.block.BlockID;
-import cn.nukkit.blockentity.BlockEntity;
-import cn.nukkit.blockentity.BlockEntityChest;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
-import cn.nukkit.inventory.Inventory;
-import cn.nukkit.inventory.InventoryHolder;
 import cn.nukkit.item.Item;
-import cn.nukkit.item.ItemDiamond;
-import cn.nukkit.item.ItemID;
 import cn.nukkit.level.Level;
 import cn.nukkit.level.Location;
-import cn.nukkit.level.Position;
-import cn.nukkit.math.BlockFace;
-import cn.nukkit.math.Vector3;
 import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
 
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.concurrent.TimeUnit;
 
 public class CommandEventLootdrop extends Command {
 
@@ -57,6 +47,8 @@ public class CommandEventLootdrop extends Command {
             }
         }, 1000 * 60 * 10);
 
+        StaticCache.EVENT_ACTIVE = true;
+
         int max_z = -306;
         int min_z = 308;
         int max_x = -266;
@@ -72,19 +64,29 @@ public class CommandEventLootdrop extends Command {
 
         Block chest = Block.get(BlockID.CHEST);
 
-        Item diamond = Item.get(ItemID.DIAMOND);
-        diamond.setCount(2);
+
         player.getLevel().setBlock(location, chest);
 
         Level world = Server.getInstance().getLevelByName("world");
 
-        BlockChest c = (BlockChest) world.getBlock(location.getLocation());
-        
+        BlockChest c = (BlockChest) level.getBlock(location);
 
-        BlockEntityChest chestinv = (BlockEntityChest) level.getBlockEntity(new Vector3(location.getX(), location.getY(), location.getZ()));
-        chestinv.getInventory().addItem(diamond);
+        c.createBlockEntity();
 
-        ((BlockEntityChest) level.getBlockEntity(new Vector3(random_x, get_y, random_z))).getInventory().setItem(1, diamond);
+        int item1_select = (int) Math.floor(Math.random() * (700 - 1 + 1) + 1);
+        int item2_select = (int) Math.floor(Math.random() * (700 - 1 + 1) + 1);
+        int item3_select = (int) Math.floor(Math.random() * (700 - 1 + 1) + 1);
+
+        Item item1 = Item.get(item1_select);
+
+        Item item2 = Item.get(item2_select);
+
+        Item item3 = Item.get(item3_select);
+
+        c.getBlockEntity().getInventory().setItem(11, item1);
+        c.getBlockEntity().getInventory().setItem(13, item2);
+        c.getBlockEntity().getInventory().setItem(15, item3);
+
 
 
         return true;

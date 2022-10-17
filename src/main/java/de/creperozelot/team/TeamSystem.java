@@ -72,10 +72,10 @@ public class TeamSystem {
             player.setNameTag(creperozelot.colorize("&2DieCoolen x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("MaximalFlame")) {
             team = "#Vodafone";
-            player.setNameTag(creperozelot.colorize("&2#Voadfone x &f") + player.getName());
-        } else if (player.getName().equalsIgnoreCase("zeyyco")) {
+            player.setNameTag(creperozelot.colorize("&2Kings x &f") + player.getName());
+        } else if (player.getName().equalsIgnoreCase("MotteBlatt18479")) {
             team = "#Vodafone";
-            player.setNameTag(creperozelot.colorize("&2#Vodafone x &f") + player.getName());
+            player.setNameTag(creperozelot.colorize("&2Kings x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("KilianCrafterYT")) {
             team = "DerPoleUndDerItaliener";
             player.setNameTag(creperozelot.colorize("&2DerPoleUndDerItaliener x &f") + player.getName());
@@ -179,6 +179,9 @@ public class TeamSystem {
         } else if (player.getName().equalsIgnoreCase("ToastbrotGHG")) {
             team = "tutti frutti";
             player.setNameTag(creperozelot.colorize("&2tutti frutti x &f") + player.getName());
+        } else if (player.getName().equalsIgnoreCase("RealSertrix")) {
+            team = "Gamatisch";
+            player.setNameTag(creperozelot.colorize("&2Gamatisch x &f") + player.getName());
         }
         return team;
     }
@@ -209,9 +212,9 @@ public class TeamSystem {
         } else if (player.getName().equalsIgnoreCase("OliverLP5499")) {
             player.setNameTag(creperozelot.colorize("&2DieCoolen x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("MaximalFlame")) {
-            player.setNameTag(creperozelot.colorize("&2#Voadfone x &f") + player.getName());
-        } else if (player.getName().equalsIgnoreCase("zeyyco")) {
-            player.setNameTag(creperozelot.colorize("&2#Vodafone x &f") + player.getName());
+            player.setNameTag(creperozelot.colorize("&2Kings x &f") + player.getName());
+        } else if (player.getName().equalsIgnoreCase("MotteBlatt18479")) {
+            player.setNameTag(creperozelot.colorize("&2Kings x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("KilianCrafterYT")) {
             player.setNameTag(creperozelot.colorize("&2DerPoleUndDerItaliener x &f") + player.getName());
         }
@@ -286,6 +289,8 @@ public class TeamSystem {
             player.setNameTag(creperozelot.colorize("&2CrazyFazxn x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("F3yson HD")) {
             player.setNameTag(creperozelot.colorize("&2CrazyFazxn x &f") + player.getName());
+        }  else if (player.getName().equalsIgnoreCase("RealSertrix")) {
+            player.setNameTag(creperozelot.colorize("&2Gamatisch x &f") + player.getName());
         }
     }
 

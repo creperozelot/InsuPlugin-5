@@ -2,7 +2,6 @@ package de.creperozelot.listener;
 
 import cn.nukkit.item.Item;
 import cn.nukkit.level.Location;
-import de.creperozelot.StaticCache;
 import de.creperozelot.team.TeamSystem;
 
 import cn.nukkit.Server;

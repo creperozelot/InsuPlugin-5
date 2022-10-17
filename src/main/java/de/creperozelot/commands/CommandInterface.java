@@ -2,7 +2,6 @@ package de.creperozelot.commands;
 
 import cn.nukkit.form.element.ElementButton;
 import cn.nukkit.form.window.FormWindow;
-import cn.nukkit.form.window.FormWindowCustom;
 import cn.nukkit.form.window.FormWindowSimple;
 import de.creperozelot.creperozelot;
 import cn.nukkit.Player;
