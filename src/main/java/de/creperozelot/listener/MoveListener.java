@@ -24,28 +24,29 @@ public class MoveListener implements Listener {
     @EventHandler
     public void onMove(PlayerMoveEvent event) {
         Player player = event.getPlayer();
-        Block block = player.getLevel().getBlock((Vector3) player.getLocation().subtract(0.0D, 1.0D, 0.0D));
-        Block block1 = player.getLevel().getBlock((Vector3) player.getLocation());
+        Block block = player.getLevel().getBlock(player.getLocation().subtract(0, 1, 0));
+        Block block1 = player.getLevel().getBlock(player.getLocation());
         if (StaticCache.EVENT_WATERDANAGE) {
             if (block1.getId() == Block.WATER) {
                 player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
-                player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(1).setVisible(false));
+                player.addEffect(Effect.getEffect(Effect.POISON).setDuration(60).setAmplifier(1).setVisible(false));
             }
             if (block instanceof Water) {
-                block.onEntityCollide((Entity) player);
+                block.onEntityCollide(player);
             }
             if (player.isInsideOfWater()) {
                 player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
-                player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(2).setVisible(false));
-            }
-            if (player.isSwimming()) {
+                player.addEffect(Effect.getEffect(Effect.POISON).setDuration(60).setAmplifier(2).setVisible(false));
+            } if (player.isSwimming()) {
                 player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
-                player.addEffect(Effect.getEffect(19).setDuration(60).setAmplifier(2).setVisible(false));
+                player.addEffect(Effect.getEffect(Effect.POISON).setDuration(60).setAmplifier(2).setVisible(false));
             }
         }
-        if (StaticCache.EVENT_HOTGRASS && block.getId() == 2) {
-            player.setOnFire(60);
-            player.sendTitle(creperozelot.colorize("&a&lHot Grass"), creperozelot.colorize("&6Du darfst dich nicht auf grass Befinden"), 0, 40, 20);
+        if (StaticCache.EVENT_HOTGRASS) {
+            if (block.getId() == Block.GRASS) {
+                player.setOnFire(20);
+                player.sendTitle(creperozelot.colorize("&a&lHot Grass"), creperozelot.colorize("&6Du darfst dich nicht auf grass Befinden"), 0, 40, 20);
+            }
         }
     }
 

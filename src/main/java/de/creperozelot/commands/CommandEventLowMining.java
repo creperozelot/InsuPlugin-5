@@ -113,6 +113,7 @@ public class CommandEventLowMining extends Command {
 
         for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
             AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &e&lMining-Fatique"), creperozelot.colorize("&aStart"), 0, 40, 0);
+            AllOnlinePlayers.addEffect(Effect.getEffect(Effect.MINING_FATIGUE).setAmplifier(2).setDuration(20 * 60 * 2));
             Level level = AllOnlinePlayers.getLevel();
             level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
         }

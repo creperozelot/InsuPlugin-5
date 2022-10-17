@@ -15,6 +15,7 @@ import cn.nukkit.item.Item;
 import cn.nukkit.level.Level;
 import cn.nukkit.level.Location;
 import cn.nukkit.level.Sound;
+import cn.nukkit.potion.Effect;
 import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
 
@@ -351,6 +352,7 @@ public class InterfaceListener implements Listener {
 
                 for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
                     AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&aStart"), 0, 40, 0);
+                    AllOnlinePlayers.addEffect(Effect.getEffect(Effect.BLINDNESS).setAmplifier(2).setDuration(20 * 60 * 2));
                     Level level = AllOnlinePlayers.getLevel();
                     level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
                 }
@@ -440,6 +442,7 @@ public class InterfaceListener implements Listener {
 
                 for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
                     AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &e&lMining-Fatique"), creperozelot.colorize("&aStart"), 0, 40, 0);
+                    AllOnlinePlayers.addEffect(Effect.getEffect(Effect.MINING_FATIGUE).setAmplifier(2).setDuration(20 * 60 * 2));
                     Level level = AllOnlinePlayers.getLevel();
                     level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
                 }
@@ -480,7 +483,7 @@ public class InterfaceListener implements Listener {
             if (responseName.equals("Lootdrop")) {
 
                 if (StaticCache.EVENT_ACTIVE) {
-                    player.sendMessage(creperozelot.prefix + creperozelot.colorize("&cDu kannst events nur alle 10 Minuten ausführen"));
+                    player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&cDu kannst events nur alle 10 Minuten ausführen"));
                 }
 
                 new Timer().schedule(new TimerTask() {

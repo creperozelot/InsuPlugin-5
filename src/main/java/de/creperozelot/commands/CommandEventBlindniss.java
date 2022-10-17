@@ -119,6 +119,7 @@ public class CommandEventBlindniss extends Command {
 
         for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
             AllOnlinePlayers.sendTitle(creperozelot.colorize("&6&lEvent &8&lBlindniss"), creperozelot.colorize("&aStart"), 0, 40, 0);
+            AllOnlinePlayers.addEffect(Effect.getEffect(Effect.BLINDNESS).setAmplifier(2).setDuration(20 * 60 * 2));
             Level level = AllOnlinePlayers.getLevel();
             level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
         }

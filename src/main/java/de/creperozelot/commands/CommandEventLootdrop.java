@@ -36,7 +36,7 @@ public class CommandEventLootdrop extends Command {
         Player player = (Player) commandSender;
 
         if (StaticCache.EVENT_ACTIVE) {
-            player.sendMessage(creperozelot.prefix + "&cDu kannst events nur alle 10 Minuten ausführen");
+            player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&cDu kannst events nur alle 10 Minuten ausführen"));
             return true;
         }
 
