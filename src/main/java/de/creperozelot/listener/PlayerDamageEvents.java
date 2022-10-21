@@ -4,9 +4,7 @@ import cn.nukkit.Player;
 import cn.nukkit.block.Block;
 import cn.nukkit.event.EventHandler;
 import cn.nukkit.event.Listener;
-import cn.nukkit.event.block.BlockPlaceEvent;
 import cn.nukkit.event.entity.EntityDamageEvent;
-import cn.nukkit.level.Level;
 import cn.nukkit.math.Vector3;
 import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
@@ -23,4 +21,5 @@ public class PlayerDamageEvents implements Listener {
             player.sendTitle(creperozelot.colorize("&a&lHotGrass"), creperozelot.colorize("&6Du darfst dich nicht auf grass Befinden"), 0, 40, 20);
         }
     }
+
 }

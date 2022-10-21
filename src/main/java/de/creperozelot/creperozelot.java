@@ -8,14 +8,12 @@ import cn.nukkit.item.ItemID;
 import cn.nukkit.plugin.PluginBase;
 import cn.nukkit.plugin.PluginManager;
 import cn.nukkit.scheduler.ServerScheduler;
-import cn.nukkit.scheduler.Task;
 import cn.nukkit.utils.TextFormat;
 import de.creperozelot.commands.*;
 import de.creperozelot.listener.*;
 import de.creperozelot.start.StartFreze;
 import de.creperozelot.tasks.CheckTasks;
 import de.creperozelot.tasks.StartCountDown;
-import de.creperozelot.tasks.WatingForHost;
 
 public class creperozelot extends PluginBase {
     private static creperozelot instance;
@@ -37,6 +35,7 @@ public class creperozelot extends PluginBase {
         this.saveDefaultConfig();
 
         //remove Crafting Recipe
+        this.getServer().getCraftingManager().getRecipes().remove(ItemID.STICK);
         this.getServer().getCraftingManager().getRecipes().removeIf(recipe -> recipe.getResult().getId() == ItemID.STICK);
         //register
         this.registerListener();

@@ -41,11 +41,11 @@ public class TeamSystem {
             team = "RollLade";
             player.setNameTag(creperozelot.colorize("&2RollLade x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("GedankeAmeise1")) {
-            team = "MallowWasBistDuWiederSoMad";
-            player.setNameTag(creperozelot.colorize("&2MWBDSM x &f") + player.getName());
+            team = "saftig";
+            player.setNameTag(creperozelot.colorize("&2saftig x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("Mxllow1143")) {
-            team = "MallowWasBistDuWiederSoMad";
-            player.setNameTag(creperozelot.colorize("&2MWBDSM x &f") + player.getName());
+            team = "saftig";
+            player.setNameTag(creperozelot.colorize("&2saftig x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("Dilonxy")) {
             team = "#Darkside";
             player.setNameTag(creperozelot.colorize("&2#Darkside x &f") + player.getName());
@@ -143,7 +143,7 @@ public class TeamSystem {
         } else if (player.getName().equalsIgnoreCase("LodgedGuitar93")) {
             team = "Heheheha";
             player.setNameTag(creperozelot.colorize("&2Heheheha x &f") + player.getName());
-        } else if (player.getName().equalsIgnoreCase("IchB1nE1neB1ene")) {
+        } else if (player.getName().equalsIgnoreCase("BeecraftBE")) {
             team = "#Ingodingos";
             player.setNameTag(creperozelot.colorize("&2#Ingodingos x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("FabiDE14")) {
@@ -191,10 +191,10 @@ public class TeamSystem {
             player.setNameTag(creperozelot.colorize("&2RollLade x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("JRollylp")) {
             player.setNameTag(creperozelot.colorize("&2RollLade x &f") + player.getName());
-        } else if (player.getName().equalsIgnoreCase("GedankeAmeise1")) {
-            player.setNameTag(creperozelot.colorize("&2MWBDSM x &f") + player.getName());
-        } else if (player.getName().equalsIgnoreCase("Mxllow1143")) {
-            player.setNameTag(creperozelot.colorize("&2MWBDSM x &f") + player.getName());
+        } else if (player.getName().equalsIgnoreCase("TomatensaftPUR")) {
+            player.setNameTag(creperozelot.colorize("&saftig x &f") + player.getName());
+        } else if (player.getName().equalsIgnoreCase("ApfelsaftPUR")) {
+            player.setNameTag(creperozelot.colorize("&saftig x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("Dilonxy")) {
             player.setNameTag(creperozelot.colorize("&2#Darkside x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("UltraRobbe08")) {
@@ -227,7 +227,7 @@ public class TeamSystem {
 
         else if (player.getName().equalsIgnoreCase("SMIBII_YT")) {
             player.setNameTag(creperozelot.colorize("&2FORRUSSIA x &f") + player.getName());
-        } else if (player.getName().equalsIgnoreCase("TOADENATION")) {
+        } else if (player.getName().equalsIgnoreCase("ToadenationNr1")) {
             player.setNameTag(creperozelot.colorize("&2FORRUSSIA x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("byknax")) {
             player.setNameTag(creperozelot.colorize("&2Tittenfreunde x &f") + player.getName());
@@ -261,7 +261,7 @@ public class TeamSystem {
             player.setNameTag(creperozelot.colorize("&2Heheheha x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("LodgedGuitar93")) {
             player.setNameTag(creperozelot.colorize("&2Heheheha x &f") + player.getName());
-        } else if (player.getName().equalsIgnoreCase("IchB1nE1neB1ene")) {
+        } else if (player.getName().equalsIgnoreCase("BeecraftBE")) {
             player.setNameTag(creperozelot.colorize("&2#Ingodingos x &f") + player.getName());
         } else if (player.getName().equalsIgnoreCase("FabiDE14")) {
             player.setNameTag(creperozelot.colorize("&2#Ingodingos x &f") + player.getName());

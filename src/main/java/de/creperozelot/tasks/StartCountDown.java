@@ -105,7 +105,7 @@ public class StartCountDown extends Task {
                     Location fly_3 = new Location(-294, 142, -78);
                     Location fly_4 = new Location(-125, 100, 116);
                     Location fly_5 = new Location(102, 83, 155);
-                    Location spawn = new Location(0, 0, 0);
+                    Location spawn = new Location(-294, 142, -78);
                     Location RollLade = new Location(-224, 63, 301);
                     Location MallowWasBistDuWiederSoMad = new Location(293, 63, -319);
                     Location Darkside = new Location(-321, 63, -273);
@@ -166,9 +166,13 @@ public class StartCountDown extends Task {
                         //TP Gamemaster
                         if (!(player_creperozelot == null)) {
                             player_creperozelot.teleport(spawn);
-                        } else if (!(GodVikthor == null)) {
+                        }
+
+                        if (!(GodVikthor == null)) {
                             GodVikthor.teleport(spawn);
-                        } else if (!(Levi_GPP == null)) {
+                        }
+
+                        if (!(Levi_GPP == null)) {
                             Levi_GPP.teleport(spawn);
                         }
 
@@ -179,151 +183,202 @@ public class StartCountDown extends Task {
                         //TP Players
                         if (!(HowLater == null)) {
                             HowLater.teleport(RollLade);
+                            Server.getInstance().getConfig().set("HowLater", false);
                         }
                         if (!(JRollylp == null)) {
                             JRollylp.teleport(RollLade);
+                            Server.getInstance().getConfig().set("JRollylp", false);
                         }
                         if (!(GedankeAmeise1 == null)) {
                             GedankeAmeise1.teleport(MallowWasBistDuWiederSoMad);
+                            Server.getInstance().getConfig().set("GedankeAmeise1", false);
                         }
                         if (!(Mxllow1143 == null)) {
                             Mxllow1143.teleport(MallowWasBistDuWiederSoMad);
+                            Server.getInstance().getConfig().set("Mxllow1143", false);
                         }
                         if (!(Dilonxy == null)) {
                             Dilonxy.teleport(Darkside);
+                            Server.getInstance().getConfig().set("Dilonxy", false);
                         }
                         if (!(UltraRobbe08 == null)) {
                             UltraRobbe08.teleport(Darkside);
+                            Server.getInstance().getConfig().set("UltraRobbe08", false);
                         }
                         if (!(Wabel_Ghost == null)) {
                             Wabel_Ghost.teleport(Pinkplayer);
+                            Server.getInstance().getConfig().set("Wabel_Ghost", false);
                         }
                         if (!(Greenplayer_Tv == null)) {
                             Greenplayer_Tv.teleport(Pinkplayer);
+                            Server.getInstance().getConfig().set("Greenplayer_Tv", false);
                         }
                         if (!(F0ngiMG == null)) {
                             F0ngiMG.teleport(ELEMAO);
+                            Server.getInstance().getConfig().set("F0ngiMG", false);
                         }
                         if (!(xF1lmx == null)) {
                             xF1lmx.teleport(ELEMAO);
+                            Server.getInstance().getConfig().set("xF1lmx", false);
                         }
                         if (!(NeunMatt54321 == null)) {
                             NeunMatt54321.teleport(DieCoolen);
+                            Server.getInstance().getConfig().set("NeunMatt54321", false);
                         }
                         if (!(OliverLP5499 == null)) {
                             OliverLP5499.teleport(DieCoolen);
+                            Server.getInstance().getConfig().set("OliverLP5499", false);
                         }
                         if (!(MaximalFlame == null)) {
                             MaximalFlame.teleport(Kings);
+                            Server.getInstance().getConfig().set("MaximalFlame", false);
                         }
                         if (!(MotteBlatt18479 == null)) {
                             MotteBlatt18479.teleport(Kings);
+                            Server.getInstance().getConfig().set("MotteBlatt18479", false);
                         }
                         if (!(KilianCrafterYT == null)) {
                             KilianCrafterYT.teleport(DerPoleUndDerItaliener);
+                            Server.getInstance().getConfig().set("KilianCrafterYT", false);
                         }
                         if (!(LDread == null)) {
                             LDread.teleport(L0STYS);
+                            Server.getInstance().getConfig().set("LDread", false);
                         }
                         if (!(Sculky == null)) {
                             Sculky.teleport(L0STYS);
+                            Server.getInstance().getConfig().set("Sculky", false);
                         }
                         if (!(SMIBII_YT == null)) {
                             SMIBII_YT.teleport(FORRUSSIA);
+                            Server.getInstance().getConfig().set("SMIBII_YT", false);
                         }
                         if (!(TOADENATION == null)) {
                             TOADENATION.teleport(FORRUSSIA);
+                            Server.getInstance().getConfig().set("TOADENATION", false);
                         }
                         if (!(Qwuanda == null)) {
                             Qwuanda.teleport(Quajos);
+                            Server.getInstance().getConfig().set("Qwuanda", false);
                         }
                         if (!(Jonas_TV5 == null)) {
                             Jonas_TV5.teleport(Quajos);
+                            Server.getInstance().getConfig().set("Jonas_TV5", false);
                         }
                         if (!(UltimatePhil794 == null)) {
                             UltimatePhil794.teleport(Eulenfänger);
+                            Server.getInstance().getConfig().set("UltimatePhil794", false);
                         }
                         if (!(Todesbanane1203 == null)) {
                             Todesbanane1203.teleport(Eulenfänger);
+                            Server.getInstance().getConfig().set("Todesbanane1203", false);
                         }
                         if (!(GrafTepid == null)) {
                             GrafTepid.teleport(Bigbababubatz);
+                            Server.getInstance().getConfig().set("GrafTepid", false);
                         }
                         if (!(LitschiiYT == null)) {
                             LitschiiYT.teleport(Bigbababubatz);
+                            Server.getInstance().getConfig().set("LitschiiYT", false);
                         }
                         if (!(VictorJu4751 == null)) {
                             VictorJu4751.teleport(DieKrabbelstube);
+                            Server.getInstance().getConfig().set("VictorJu4751", false);
                         }
                         if (!(NURnyraee == null)) {
                             NURnyraee.teleport(DieKrabbelstube);
+                            Server.getInstance().getConfig().set("NURnyraee", false);
                         }
                         if (!(Djalami007 == null)) {
                             Djalami007.teleport(SAO);
+                            Server.getInstance().getConfig().set("Djalami007", false);
                         }
                         if (!(Straussiiii == null)) {
                             Straussiiii.teleport(SAO);
+                            Server.getInstance().getConfig().set("Straussiiii", false);
                         }
                         if (!(ytDoomS == null)) {
                             ytDoomS.teleport(randomteam);
+                            Server.getInstance().getConfig().set("ytDoomS", false);
                         }
                         if (!(GunmetalNine15 == null)) {
                             GunmetalNine15.teleport(randomteam);
+                            Server.getInstance().getConfig().set("GunmetalNine15", false);
                         }
                         if (!(MetallNatter2 == null)) {
                             MetallNatter2.teleport(Heheheha);
+                            Server.getInstance().getConfig().set("MetallNatter2", false);
                         }
                         if (!(LodgedGuitar93 == null)) {
                             LodgedGuitar93.teleport(Heheheha);
+                            Server.getInstance().getConfig().set("LodgedGuitar93", false);
                         }
                         if (!(IchB1nE1neB1ene == null)) {
                             IchB1nE1neB1ene.teleport(Ingodingos);
+                            Server.getInstance().getConfig().set("IchB1nE1neB1ene", false);
                         }
                         if (!(FabiDE14 == null)) {
                             FabiDE14.teleport(Ingodingos);
+                            Server.getInstance().getConfig().set("FabiDE14", false);
                         }
                         if (!(BennoMCyt == null)) {
                             BennoMCyt.teleport(GamilinoUndBenno);
+                            Server.getInstance().getConfig().set("BennoMCyt", false);
                         }
                         if (!(AreaNull == null)) {
                             AreaNull.teleport(Tam_Plums);
+                            Server.getInstance().getConfig().set("AreaNull", false);
                         }
                         if (!(Ilyco187 == null)) {
                             Ilyco187.teleport(Tam_Plums);
+                            Server.getInstance().getConfig().set("Ilyco187", false);
                         }
                         if (!(Linus123455 == null)) {
                             Linus123455.teleport(KeineAhnung);
+                            Server.getInstance().getConfig().set("Linus123455", false);
                         }
                         if (!(DoncaMilloLp == null)) {
                             DoncaMilloLp.teleport(KeineAhnung);
+                            Server.getInstance().getConfig().set("DoncaMilloLP", false);
                         }
                         if (!(DanielGamerYt31 == null)) {
                             DanielGamerYt31.teleport(Gamatisch);
+                            Server.getInstance().getConfig().set("DanielGamertYt31", false);
                         }
                         if (!(RealSertrix == null)) {
                             RealSertrix.teleport(Gamatisch);
+                            Server.getInstance().getConfig().set("RealSertrix", false);
                         }
                         if (!(The_Noah_YT == null)) {
                             The_Noah_YT.teleport(AmogUsIstBesserAlsValo);
+                            Server.getInstance().getConfig().set("The_Noah_YT", false);
                         }
                         if (!(DerHeroGamer007 == null)) {
                             DerHeroGamer007.teleport(AmogUsIstBesserAlsValo);
+                            Server.getInstance().getConfig().set("DerHeroGamer007", false);
                         }
                         if (!(zPqndaFNA == null)) {
                             zPqndaFNA.teleport(NoYTRank);
+                            Server.getInstance().getConfig().set("zPqndaFNA", false);
                         }
                         if (!(vamiiz == null)) {
                             vamiiz.teleport(NoYTRank);
+                            Server.getInstance().getConfig().set("vamiiz", false);
                         }
                         if (!(ToastbrotGHG == null)) {
                             ToastbrotGHG.teleport(tutti_frutti);
+                            Server.getInstance().getConfig().set("ToastbrotGHG", false);
                         }
                         if (!(zCrxyy == null)) {
                             zCrxyy.teleport(CrazyFazxn);
+                            Server.getInstance().getConfig().set("zCrxyy", false);
                         }
                         if (!(F3yson_HD == null)) {
                             F3yson_HD.teleport(CrazyFazxn);
+                            Server.getInstance().getConfig().set("F3yson_HD", false);
                         }
+
+                        Server.getInstance().getConfig().save();
 
                         for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
                             AllOnlinePlayers.setGamemode(0);

@@ -46,57 +46,59 @@ PROJECTILE: '{Player} got shot by {Attacker}'
 # Spieler Variablen
 started:
     players:
-        HowLater: false
-        JRollylp: false
-        GedankeAmeise1: false
-        Mxllow1143: false
-        Dilonxy: false
-        UltraRobbe08: false
-        Wabel_Ghost: false
-        Greenplayer_Tv: false
-        F0ngiMG: false
-        xF1lmx: false
-        NeunMatt54321: false
-        OliverLP5499: false
-        MaximalFlame: false
-        zeyyco: false
-        KilianCrafterYT: false
-        LDread: false
-        Sculky: false
-        SMIBII_YT: false
-        TOADENATION: false
-        Qwuanda: false
-        Jonas_TV5: false
-        UltimatePhil794: false
-        Todesbanane1203: false
-        GrafTepid: false
-        LitschiiYT: false
-        VictorJu4751: false
-        NURnyraee: false
-        Djalami007: false
-        Straussiiii: false
-        ytDoomS: false
-        GunmetalNine15: false
-        MetallNatter2: false
-        LodgedGuitar93: false
-        IchB1nE1neB1ene: false
-        FabiDE14: false
-        BennoMCyt: false
-        GamilinoMC: false
-        AreaNull: false
-        Ilyco187: false
-        Linus123455: false
-        DoncaMilloLp: false
-        DanielGamerYt31: false
-        The_Noah_YT: false
-        DerHeroGamer007: false
-        ToastbrotGHG: false
-        zPqndaFNA: false
-        Vamiiz: false
-        F3yson HD: false
-        zCrxyy: false
+        HowLater: true
+        JRollylp: true
+        GedankeAmeise1: true
+        Mxllow1143: true
+        Dilonxy: true
+        UltraRobbe08: true
+        Wabel_Ghost: true
+        Greenplayer_Tv: true
+        F0ngiMG: true
+        xF1lmx: true
+        NeunMatt54321: true
+        OliverLP5499: true
+        MaximalFlame: true
+        zeyyco: true
+        KilianCrafterYT: true
+        LDread: true
+        Sculky: true
+        SMIBII_YT: true
+        TOADENATION: true
+        Qwuanda: true
+        Jonas_TV5: true
+        UltimatePhil794: true
+        Todesbanane1203: true
+        GrafTepid: true
+        LitschiiYT: true
+        VictorJu4751: true
+        NURnyraee: true
+        Djalami007: true
+        Straussiiii: true
+        ytDoomS: true
+        GunmetalNine15: true
+        MetallNatter2: true
+        LodgedGuitar93: true
+        IchB1nE1neB1ene: true
+        FabiDE14: true
+        BennoMCyt: true
+        GamilinoMC: true
+        AreaNull: true
+        Ilyco187: true
+        Linus123455: true
+        DoncaMilloLp: true
+        DanielGamerYt31: true
+        The_Noah_YT: true
+        DerHeroGamer007: true
+        ToastbrotGHG: true
+        zPqndaFNA: true
+        Vamiiz: true
+        F3yson HD: true
+        zCrxyy: true
+        MotteBlatt18479: true
+
 
 # Allgemeine Dev Variablen
 start: false
 test: false
-Config-Version: 1.2
+Config-Version: 1.3
