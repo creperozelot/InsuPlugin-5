@@ -33,11 +33,10 @@ public class MoveListener implements Listener {
             }
             if (block instanceof Water) {
                 block.onEntityCollide(player);
-            }
-            if (player.isInsideOfWater()) {
+            } else if (player.isInsideOfWater()) {
                 player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
                 player.addEffect(Effect.getEffect(Effect.POISON).setDuration(60).setAmplifier(2).setVisible(false));
-            } if (player.isSwimming()) {
+            } else if (player.isSwimming()) {
                 player.sendTitle(creperozelot.colorize("&6&lWasser ist Säure"), creperozelot.colorize("&6Halte dich von Wasser fern"), 0, 40, 20);
                 player.addEffect(Effect.getEffect(Effect.POISON).setDuration(60).setAmplifier(2).setVisible(false));
             }

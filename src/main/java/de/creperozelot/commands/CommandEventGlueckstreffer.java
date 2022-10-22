@@ -5,8 +5,6 @@ import cn.nukkit.Server;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
 import cn.nukkit.item.Item;
-import cn.nukkit.item.ItemDiamond;
-import cn.nukkit.level.Location;
 import de.creperozelot.StaticCache;
 import de.creperozelot.creperozelot;
 

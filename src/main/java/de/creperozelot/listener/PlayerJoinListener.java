@@ -5,6 +5,7 @@ import cn.nukkit.event.entity.EntityDamageByBlockEvent;
 import cn.nukkit.event.entity.EntityDamageEvent;
 import cn.nukkit.event.server.DataPacketReceiveEvent;
 import cn.nukkit.item.Item;
+import cn.nukkit.item.ItemID;
 import cn.nukkit.level.Location;
 import cn.nukkit.network.protocol.SetLocalPlayerAsInitializedPacket;
 import cn.nukkit.potion.Effect;
@@ -26,280 +27,17 @@ import java.util.concurrent.TimeUnit;
 public class PlayerJoinListener implements Listener {
 
 
-
-    @EventHandler
-    public void onPlayerfirstJoin(PlayerJoinEvent event) {
-        Location spawn = new Location(0, 0, 0);
-        Location RollLade = new Location(-224, 63, 301);
-        Location MallowWasBistDuWiederSoMad = new Location(293, 63, -319);
-        Location Darkside = new Location(-321, 63, -273);
-        Location Pinkplayer = new Location(345, 63, -51);
-        Location ELEMAO = new Location(-90, 189, -44);
-        Location DieCoolen = new Location(100, 63, -7);
-        Location Vodafone = new Location(-311, 63, 117);
-        Location DerPoleUndDerItaliener = new Location(127, 63, -347);
-        Location L0STYS = new Location(-440, 63, -72);
-        Location FORRUSSIA = new Location(126, 63, -197);
-        Location Qajos = new Location(266, 63, -77);
-        Location Eulenfänger = new Location(457, 63, -189);
-        Location Bigbababubatz = new Location(-145, 63, -423);
-        Location DieKrabbelstube = new Location(499, 63, -84);
-        Location SAO = new Location(-66, 63, 215);
-        Location randomteam = new Location(260, 139, -204);
-        Location Heheheha = new Location(122, 63, 440);
-        Location Ingodingos = new Location(208, 84, -270);
-        Location Tam_Plums = new Location(456, 64, 102);
-        Location KeineAhnung = new Location(-258, 130, 42);
-        Location Gamatisch = new Location(-68, 134, 12);
-        Location AmogUsIstBesserAlsValo = new Location(-57, 87, 86);
-        Location NoYTRank = new Location(-83, 126, -175);
-        Location tutti_frutti = new Location(-198, 63, -352);
-        Location GamilinoUndBenno = new Location(-210, 105, 117);
-
-        //PLayer Variables
-        Player player_creperozelot = Server.getInstance().getPlayerExact("creperozelot");
-        Player GodVikthor = Server.getInstance().getPlayerExact("GodVikthor");
-        Player Levi_GPP = Server.getInstance().getPlayerExact("Levi_GPP");
-        Player HowLater = Server.getInstance().getPlayerExact("HowLater");
-        Player JRollylp = Server.getInstance().getPlayerExact("JRollylp");
-        Player GedankeAmeise1 = Server.getInstance().getPlayerExact("GedankeAmeise1");
-        Player Mxllow1143 = Server.getInstance().getPlayerExact("Mxllow1143");
-        Player Dilonxy = Server.getInstance().getPlayerExact("Dilonxy");
-        Player UltraRobbe08 = Server.getInstance().getPlayerExact("UltraRobbe08");
-        Player Wabel_Ghost = Server.getInstance().getPlayerExact("Wabel Ghost");
-        Player Greenplayer_Tv = Server.getInstance().getPlayerExact("Greenplayer Tv");
-        Player F0ngiMG = Server.getInstance().getPlayerExact("F0ngiMG");
-        Player xF1lmx = Server.getInstance().getPlayerExact("xF1lmx");
-        Player NeunMatt54321 = Server.getInstance().getPlayerExact("NeunMatt54321");
-        Player OliverLP5499 = Server.getInstance().getPlayerExact("OliverLP5499");
-        Player MaximalFlame = Server.getInstance().getPlayerExact("MaximalFlame");
-        Player zeyyco = Server.getInstance().getPlayerExact("MotteBlatt18479");
-        Player KilianCrafterYT = Server.getInstance().getPlayerExact("KilianCrafterYT");
-        Player LDread = Server.getInstance().getPlayerExact("LDread");
-        Player Sculky = Server.getInstance().getPlayerExact("Sculky");
-        Player SMIBII_YT = Server.getInstance().getPlayerExact("SMIBII_YT");
-        Player TOADENATION = Server.getInstance().getPlayerExact("TOADENATION");
-        Player Qwuanda = Server.getInstance().getPlayerExact("Qwuanda");
-        Player Jonas_TV5 = Server.getInstance().getPlayerExact("Jonas TV5");
-        Player UltimatePhil794 = Server.getInstance().getPlayerExact("UltimatePhil794");
-        Player Todesbanane1203 = Server.getInstance().getPlayerExact("Todesbanane1203");
-        Player GrafTepid = Server.getInstance().getPlayerExact("GrafTepid");
-        Player LitschiiYT = Server.getInstance().getPlayerExact("LitschiiYT");
-        Player VictorJu4751 = Server.getInstance().getPlayerExact("VictorJu4751");
-        Player NURnyraee = Server.getInstance().getPlayerExact("NURnyraee");
-        Player Djalami007 = Server.getInstance().getPlayerExact("Djalami007");
-        Player Straussiiii = Server.getInstance().getPlayerExact("Straussiiii");
-        Player ytDoomS = Server.getInstance().getPlayerExact("ytDoomS");
-        Player GunmetalNine15 = Server.getInstance().getPlayerExact("GunmetalNine15");
-        Player MetallNatter2 = Server.getInstance().getPlayerExact("MetallNatter2");
-        Player LodgedGuitar93 = Server.getInstance().getPlayerExact("LodgedGuitar93");
-        Player IchB1nE1neB1ene = Server.getInstance().getPlayerExact("IchB1nE1neB1ene");
-        Player FabiDE14 = Server.getInstance().getPlayerExact("FabiDE14");
-        Player BennoMCyt = Server.getInstance().getPlayerExact("BennoMCyt");
-        Player GamilinoMC = Server.getInstance().getPlayerExact("GamilinoMC");
-        Player AreaNull = Server.getInstance().getPlayerExact("AreaNull");
-        Player Ilyco187 = Server.getInstance().getPlayerExact("Ilyco187");
-        Player Linus123455 = Server.getInstance().getPlayerExact("Linus123455");
-        Player DoncaMilloLp = Server.getInstance().getPlayerExact("DoncaMilloLp");
-        Player DanielGamerYt31 = Server.getInstance().getPlayerExact("DanielGamerYt31");
-        Player The_Noah_YT = Server.getInstance().getPlayerExact("The Noah YT");
-        Player DerHeroGamer007 = Server.getInstance().getPlayerExact("DerHeroGamer007");
-        Player ToastbrotGHG = Server.getInstance().getPlayerExact("ToastbrotGHG");
-        Player zPqndaFNA = Server.getInstance().getPlayerExact("zPqndaFNA");
-        Player vamiiz = Server.getInstance().getPlayerExact("vamiiz");
-        Player F3yson_HD = Server.getInstance().getPlayerExact("F3yson HD");
-        Player zCrxyy = Server.getInstance().getPlayerExact("zCrxyy");
-
-
-
-        Player player = event.getPlayer();
-        Server server = Server.getInstance();
-        Level level = player.getLevel();
-
-        if (creperozelot.getInstance().getConfig().getBoolean("start")) {
-
-
-
-
-           if (Server.getInstance().getConfig().getBoolean("HowLater")) {
-                HowLater.teleport(RollLade);
-            }
-           if (Server.getInstance().getConfig().getBoolean("JRollylp")) {
-                JRollylp.teleport(RollLade);
-            }
-           if (Server.getInstance().getConfig().getBoolean("GedankeAmeise1")) {
-                GedankeAmeise1.teleport(MallowWasBistDuWiederSoMad);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Mxllow1143")) {
-                GedankeAmeise1.teleport(MallowWasBistDuWiederSoMad);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Dilonxy")) {
-                Dilonxy.teleport(Darkside);
-            }
-           if (Server.getInstance().getConfig().getBoolean("UltraRobbe08")) {
-                UltraRobbe08.teleport(Darkside);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Wabel Ghost")) {
-                Wabel_Ghost.teleport(Pinkplayer);
-            }
-           if (Server.getInstance().getConfig().getBoolean("GreenplayerTv")) {
-                Greenplayer_Tv.teleport(Pinkplayer);
-            }
-           if (Server.getInstance().getConfig().getBoolean("F0ngiMG")) {
-                F0ngiMG.teleport(ELEMAO);
-            }
-           if (Server.getInstance().getConfig().getBoolean("xF1lmx")) {
-                xF1lmx.teleport(ELEMAO);
-            }
-           if (Server.getInstance().getConfig().getBoolean("NeunMatt54321")) {
-                NeunMatt54321.teleport(DieCoolen);
-            }
-           if (Server.getInstance().getConfig().getBoolean("OliverLP5449")) {
-                OliverLP5499.teleport(DieCoolen);
-
-            }
-
-
-            if (Server.getInstance().getConfig().getBoolean("MaximalFlame")) {
-                if (Server.getInstance().getConfig().getBoolean("MaximalFlame")) {
-                    MaximalFlame.setSpawn(Vodafone);
-                    Server.getInstance().getConfig().set("MaximalFlame", false);
-                    Server.getInstance().getConfig().save();
-                }
-
-            }
-
-           /**
-           if (player.getName().equalsIgnoreCase("MaximalFlame")) {
-               if (Server.getInstance().getConfig().getBoolean(player.getName().replace(" ", "_"))) {
-                   try {
-                       TimeUnit.SECONDS.sleep(10);
-                   } catch (InterruptedException e) {
-                       throw new RuntimeException(e);
-                   }
-                   player.teleport(Vodafone);
-               }
-           }
-           **/
-
-           if (Server.getInstance().getConfig().getBoolean("MotteBlatt18479")) {
-                zeyyco.teleport(Vodafone);
-            }
-           if (Server.getInstance().getConfig().getBoolean("KillianCrafterYT")) {
-                KilianCrafterYT.teleport(DerPoleUndDerItaliener);
-            }
-           if (Server.getInstance().getConfig().getBoolean("LDread")) {
-                LDread.teleport(L0STYS);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Sculky")) {
-                Sculky.teleport(L0STYS);
-            }
-           if (Server.getInstance().getConfig().getBoolean("SMIBII_YT")) {
-                SMIBII_YT.teleport(FORRUSSIA);
-            }
-           if (Server.getInstance().getConfig().getBoolean("ToadenationNr1")) {
-                TOADENATION.teleport(FORRUSSIA);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Jonas_TV5")) {
-                //WAITING FOR TEAM
-            }
-           if (Server.getInstance().getConfig().getBoolean("UltimatePhil794")) {
-                UltimatePhil794.teleport(Eulenfänger);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Todesbanane1203")) {
-                Todesbanane1203.teleport(Eulenfänger);
-            }
-           if (Server.getInstance().getConfig().getBoolean("GrafTepid")) {
-                GrafTepid.teleport(Bigbababubatz);
-            }
-           if (Server.getInstance().getConfig().getBoolean("LitschiiYT")) {
-                LitschiiYT.teleport(Bigbababubatz);
-            }
-           if (Server.getInstance().getConfig().getBoolean("VictorJu4751")) {
-                VictorJu4751.teleport(DieKrabbelstube);
-            }
-           if (Server.getInstance().getConfig().getBoolean("NURnyraee")) {
-                NURnyraee.teleport(DieKrabbelstube);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Djalami007")) {
-                Djalami007.teleport(SAO);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Straussiiii")) {
-                Straussiiii.teleport(SAO);
-            }
-           if (Server.getInstance().getConfig().getBoolean("ytDoomS")) {
-                ytDoomS.teleport(randomteam);
-            }
-           if (Server.getInstance().getConfig().getBoolean("GunmetalNine15")) {
-                GunmetalNine15.teleport(randomteam);
-            }
-           if (Server.getInstance().getConfig().getBoolean("MetallNatter2")) {
-                MetallNatter2.teleport(Heheheha);
-            }
-           if (Server.getInstance().getConfig().getBoolean("LodgedGuitar93")) {
-                LodgedGuitar93.teleport(Heheheha);
-            }
-           if (Server.getInstance().getConfig().getBoolean("IchB1nE1neB1ene")) {
-                IchB1nE1neB1ene.teleport(Ingodingos);
-            }
-           if (Server.getInstance().getConfig().getBoolean("FabiDE14")) {
-                FabiDE14.teleport(Ingodingos);
-            }
-           if (Server.getInstance().getConfig().getBoolean("BennoMCyt")) {
-                BennoMCyt.teleport(GamilinoUndBenno);
-            }
-           if (Server.getInstance().getConfig().getBoolean("GamilinoMC")) {
-                GamilinoMC.teleport(GamilinoUndBenno);
-            }
-           if (Server.getInstance().getConfig().getBoolean("AreaNull")) {
-                AreaNull.teleport(Tam_Plums);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Ilyco187")) {
-                Ilyco187.teleport(Tam_Plums);
-            }
-           if (Server.getInstance().getConfig().getBoolean("Linus123455")) {
-                Linus123455.teleport(KeineAhnung);
-            }
-           if (Server.getInstance().getConfig().getBoolean("DoncaMilloLp")) {
-                DoncaMilloLp.teleport(KeineAhnung);
-            }
-           if (Server.getInstance().getConfig().getBoolean("DanielGamerYT31")) {
-                DanielGamerYt31.teleport(Gamatisch);
-            }
-           if (Server.getInstance().getConfig().getBoolean("The_Noah_YT")) {
-                The_Noah_YT.teleport(AmogUsIstBesserAlsValo);
-            }
-           if (Server.getInstance().getConfig().getBoolean("DerHeroGamer007")) {
-                DerHeroGamer007.teleport(AmogUsIstBesserAlsValo);
-            }
-           if (Server.getInstance().getConfig().getBoolean("ToastbrotGHG")) {
-                ToastbrotGHG.teleport(tutti_frutti);
-            }
-           if (Server.getInstance().getConfig().getBoolean("zPqndaFNA")) {
-                zPqndaFNA.teleport(NoYTRank);
-            }
-           if (Server.getInstance().getConfig().getBoolean("vamiiz")) {
-                vamiiz.teleport(NoYTRank);
-            }
-            if (Server.getInstance().getConfig().getBoolean("F3yson HD")) {
-                F3yson_HD.teleport(NoYTRank);
-            }
-            if (Server.getInstance().getConfig().getBoolean("zCrxyy")) {
-                zCrxyy.setSpawn(NoYTRank);
-            }
-        }
-    }
-
-   /** @EventHandler
-    public  void onPlayerJoinDamage(EntityDamageByBlockEvent event) {
-        Player player = (Player) event.getEntity();
-        EntityDamageEvent.DamageCause cause = player.getLastDamageCause().getCause();
-
-
-        if (cause == EntityDamageEvent.DamageCause.SUFFOCATION) {
-            player.getLastDamageCause().setCancelled(true);
-        }
-    } **/
+    /**
+     * @EventHandler public  void onPlayerJoinDamage(EntityDamageByBlockEvent event) {
+     * Player player = (Player) event.getEntity();
+     * EntityDamageEvent.DamageCause cause = player.getLastDamageCause().getCause();
+     * <p>
+     * <p>
+     * if (cause == EntityDamageEvent.DamageCause.SUFFOCATION) {
+     * player.getLastDamageCause().setCancelled(true);
+     * }
+     * }
+     **/
 
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
@@ -313,12 +51,19 @@ public class PlayerJoinListener implements Listener {
         insuadmin.setLore("§5Der §c§lINSU Manager §5Steuert die Events und anderen", "§5Wichtige funktionen.");
         teleporter.setCustomName("§a§lTeleport System");
         teleporter.setLore("§5Das §a§lTeleport System §5ist da um sich zu einem Spieler", "§5zu Teleportieren.");
+        Item eat = new Item(ItemID.COOKED_BEEF).setCustomName("&aBio Essen");
+
+        if (!creperozelot.getInstance().getConfig().getBoolean("start")) {
+            eat.setCount(12);
+
+        }
 
         (new TeamSystem()).setTeam(player);
         (new TeamSystem()).setPlayerTeam(player);
 
         player.addEffect(Effect.getEffect(Effect.RESISTANCE).setDuration(20 * 20).setVisible(false).setAmplifier(254));
         player.teleport(playerpos);
+        player.getInventory().addItem(eat);
 
         if (player.getName().equalsIgnoreCase("GodVikthor")) {
             player.setGamemode(3);
@@ -414,7 +159,7 @@ public class PlayerJoinListener implements Listener {
         Player DoncaMilloLp = Server.getInstance().getPlayerExact("DoncaMilloLp");
         Player DanielGamerYt31 = Server.getInstance().getPlayerExact("DanielGamerYt31");
         Player RealSertrix = Server.getInstance().getPlayerExact("RealSertrix");
-        Player The_Noah_YT = Server.getInstance().getPlayerExact("The Noah YT");
+        Player CuzImQuit = Server.getInstance().getPlayerExact("CuzImQuit");
         Player DerHeroGamer007 = Server.getInstance().getPlayerExact("DerHeroGamer007");
         Player ToastbrotGHG = Server.getInstance().getPlayerExact("ToastbrotGHG");
         Player zPqndaFNA = Server.getInstance().getPlayerExact("zPqndaFNA");
@@ -701,11 +446,11 @@ public class PlayerJoinListener implements Listener {
                         creperozelot.getInstance().getConfig().save();
                         RealSertrix.teleport(Gamatisch);
                     }
-                } else if (player.getName().equalsIgnoreCase("The Noah YT")) {
-                    if (creperozelot.getInstance().getConfig().getBoolean("The Noah YT")) {
-                        creperozelot.getInstance().getConfig().set("The Noah YT", false);
+                } else if (player.getName().equalsIgnoreCase("CuzImQuit")) {
+                    if (creperozelot.getInstance().getConfig().getBoolean("CuzImQuit")) {
+                        creperozelot.getInstance().getConfig().set("CuzImQuit", false);
                         creperozelot.getInstance().getConfig().save();
-                        The_Noah_YT.teleport(AmogUsIstBesserAlsValo);
+                        CuzImQuit.teleport(AmogUsIstBesserAlsValo);
                     }
                 } else if (player.getName().equalsIgnoreCase("DerHeroGamer007")) {
                     if (creperozelot.getInstance().getConfig().getBoolean("DerHeroGamer007")) {

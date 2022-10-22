@@ -49,7 +49,7 @@ public class CommandEventWaterdamage extends Command {
             public void run() {
                 StaticCache.EVENT_WATERDANAGE = false;
             }
-        }, 1000 * 60 * 1);
+        }, 1000 * 60);
 
         player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &1WaterDamage&a Aktiviert."));
 
@@ -63,7 +63,7 @@ public class CommandEventWaterdamage extends Command {
                     level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
                 }
             }
-        }, 1000 * 60 * 1);
+        }, 1000 * 60);
 
         Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &1&lWater &c&lDamage&r&a wird Gestartet..."));
 

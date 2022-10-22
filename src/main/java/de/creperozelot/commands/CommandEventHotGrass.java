@@ -50,7 +50,7 @@ public class CommandEventHotGrass extends Command {
             public void run() {
                 StaticCache.EVENT_HOTGRASS = false;
             }
-        }, 1000 * 60 * 1);
+        }, 1000 * 60);
 
         player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu hast das Event &2HotGrass&a Aktiviert."));
 
@@ -64,7 +64,7 @@ public class CommandEventHotGrass extends Command {
                     level.addSound(AllOnlinePlayers.getPosition(), Sound.RANDOM_LEVELUP);
                 }
             }
-        }, 1000 * 60 * 1);
+        }, 1000 * 60);
 
         Server.getInstance().broadcastMessage(creperozelot.prefix + creperozelot.colorize("&6Event &2&lHot Grass&r&a wird Gestartet..."));
 

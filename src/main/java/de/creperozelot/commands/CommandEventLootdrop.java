@@ -67,7 +67,6 @@ public class CommandEventLootdrop extends Command {
 
         player.getLevel().setBlock(location, chest);
 
-        Level world = Server.getInstance().getLevelByName("world");
 
         BlockChest c = (BlockChest) level.getBlock(location);
 

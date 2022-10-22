@@ -14,8 +14,8 @@ public class TeamLiveListener implements Listener {
         //PLayer Variables
         Player HowLater = Server.getInstance().getPlayerExact("HowLater");
         Player JRollylp = Server.getInstance().getPlayerExact("JRollylp");
-        Player GedankeAmeise1 = Server.getInstance().getPlayerExact("GedankeAmeise1");
-        Player Mxllow1143 = Server.getInstance().getPlayerExact("Mxllow1143");
+        Player TomatensaftPUR = Server.getInstance().getPlayerExact("TomatensaftPUR");
+        Player ApfelsaftPUR = Server.getInstance().getPlayerExact("ApfelsaftPUR");
         Player Dilonxy = Server.getInstance().getPlayerExact("Dilonxy");
         Player UltraRobbe08 = Server.getInstance().getPlayerExact("UltraRobbe08");
         Player Wabel_Ghost = Server.getInstance().getPlayerExact("Wabel Ghost");
@@ -29,7 +29,7 @@ public class TeamLiveListener implements Listener {
         Player LDread = Server.getInstance().getPlayerExact("LDread");
         Player sculky4741 = Server.getInstance().getPlayerExact("sculky4741");
         Player SMIBII_YT = Server.getInstance().getPlayerExact("SMIBII_YT");
-        Player TOADENATION = Server.getInstance().getPlayerExact("TOADENATION");
+        Player ToadenationNr1 = Server.getInstance().getPlayerExact("ToadenationNr1");
         Player Qwuanda = Server.getInstance().getPlayerExact("Qwuanda");
         Player Jonas_TV5 = Server.getInstance().getPlayerExact("Jonas TV5");
         Player UltimatePhil794 = Server.getInstance().getPlayerExact("UltimatePhil794");
@@ -52,7 +52,7 @@ public class TeamLiveListener implements Listener {
         Player Ilyco187 = Server.getInstance().getPlayerExact("Ilyco187");
         Player Linus123455 = Server.getInstance().getPlayerExact("Linus123455");
         Player DoncaMilloLp = Server.getInstance().getPlayerExact("DoncaMilloLp");
-        Player The_Noah_YT = Server.getInstance().getPlayerExact("The Noah YT");
+        Player CuzImQuit = Server.getInstance().getPlayerExact("CuzImQuit");
         Player DerHeroGamer007 = Server.getInstance().getPlayerExact("DerHeroGamer007");
         Player zPqndaFNA = Server.getInstance().getPlayerExact("zPqndaFNA");
         Player vamiiz = Server.getInstance().getPlayerExact("vamiiz");
@@ -92,14 +92,14 @@ public class TeamLiveListener implements Listener {
                 player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + HowLater.getHealth())));
             }
 
-            if (player.getName().equalsIgnoreCase("GedankeAmeise1")) ;
+            if (player.getName().equalsIgnoreCase("TomatensaftPUR")) ;
             {
-                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + Mxllow1143.getHealth())));
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + ApfelsaftPUR.getHealth())));
             }
 
-            if (player.getName().equalsIgnoreCase("Mxllow1143")) ;
+            if (player.getName().equalsIgnoreCase("ApfelsaftPUR")) ;
             {
-                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + GedankeAmeise1.getHealth())));
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + TomatensaftPUR.getHealth())));
             }
 
             if (player.getName().equalsIgnoreCase("UltraRobbe08")) ;
@@ -169,10 +169,10 @@ public class TeamLiveListener implements Listener {
 
             if (player.getName().equalsIgnoreCase("SMIBII_YT")) ;
             {
-                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + TOADENATION.getHealth())));
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + ToadenationNr1.getHealth())));
             }
 
-            if (player.getName().equalsIgnoreCase("TOADENATION")) ;
+            if (player.getName().equalsIgnoreCase("ToadenationNr1")) ;
             {
                 player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + SMIBII_YT.getHealth())));
             }
@@ -282,14 +282,14 @@ public class TeamLiveListener implements Listener {
                 player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&a&l Dir wurde kein Teammate zugewiesen...")));
             }
 
-            if (player.getName().equalsIgnoreCase("The Noah YT")) ;
+            if (player.getName().equalsIgnoreCase("CuzImQuit")) ;
             {
                 player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + DerHeroGamer007.getHealth())));
             }
 
             if (player.getName().equalsIgnoreCase("DerHeroGamer007")) ;
             {
-                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + The_Noah_YT.getHealth())));
+                player.sendActionBar(creperozelot.colorize(creperozelot.colorize("&c&lLeben von deinem Teammate ist &4" + CuzImQuit.getHealth())));
             }
 
             if (player.getName().equalsIgnoreCase("zPqndaFNA")) ;

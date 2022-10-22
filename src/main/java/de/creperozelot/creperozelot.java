@@ -98,7 +98,7 @@ public class creperozelot extends PluginBase {
     //register Tasks
     private void registerTasks() {
         ServerScheduler scheduler = getServer().getScheduler();
-        scheduler.scheduleRepeatingTask(new CheckTasks(), 20*45);
+        scheduler.scheduleRepeatingTask(new CheckTasks(), 20 * 10);
         scheduler.scheduleRepeatingTask(new StartCountDown(), 20);
         getLogger().info("Registered Tasks");
     }

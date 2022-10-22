@@ -14,9 +14,9 @@ hoster: 'creperozelot'
 # Hier kannst du den Wilkommens Titel von Insu ändern
 
 title:
-    join:
-        title: '&6&lWillkommen bei'
-        subtitle: '&a&lIN&2&lSU&r&4&l 5'
+  join:
+    title: '&6&lWillkommen bei'
+    subtitle: '&a&lIN&2&lSU&r&4&l 5'
 
 # Event Cooldown (Sollte üver 60 Sekunden liegen)
 cooldown: 60
@@ -33,8 +33,8 @@ LAVA: '{Player} swam in lava'
 DROWNING: '{Player} drowned'
 BLOCK_EXPLOSION: '{Player} Blew to pieces'
 ENTITY_EXPLOSION: '{Player} Blew to pieces by {Attacker}'
-LIGHTNING:  '{Player} electrocuted'
-VOID:    '{Player} went over the edge'
+LIGHTNING: '{Player} electrocuted'
+VOID: '{Player} went over the edge'
 SUICIDE: '{Player} suicided'
 MAGIC: '{Player} cursed'
 KILL_BY_WEAPON: '{Player} got killed by {Attacker} using {WeaponName}'
@@ -44,58 +44,56 @@ PROJECTILE: '{Player} got shot by {Attacker}'
 # Diese Variablen NICHT verändern | Do NOT edit this Variables
 
 # Spieler Variablen
-started:
-    players:
-        HowLater: true
-        JRollylp: true
-        GedankeAmeise1: true
-        Mxllow1143: true
-        Dilonxy: true
-        UltraRobbe08: true
-        Wabel_Ghost: true
-        Greenplayer_Tv: true
-        F0ngiMG: true
-        xF1lmx: true
-        NeunMatt54321: true
-        OliverLP5499: true
-        MaximalFlame: true
-        zeyyco: true
-        KilianCrafterYT: true
-        LDread: true
-        Sculky: true
-        SMIBII_YT: true
-        TOADENATION: true
-        Qwuanda: true
-        Jonas_TV5: true
-        UltimatePhil794: true
-        Todesbanane1203: true
-        GrafTepid: true
-        LitschiiYT: true
-        VictorJu4751: true
-        NURnyraee: true
-        Djalami007: true
-        Straussiiii: true
-        ytDoomS: true
-        GunmetalNine15: true
-        MetallNatter2: true
-        LodgedGuitar93: true
-        IchB1nE1neB1ene: true
-        FabiDE14: true
-        BennoMCyt: true
-        GamilinoMC: true
-        AreaNull: true
-        Ilyco187: true
-        Linus123455: true
-        DoncaMilloLp: true
-        DanielGamerYt31: true
-        The_Noah_YT: true
-        DerHeroGamer007: true
-        ToastbrotGHG: true
-        zPqndaFNA: true
-        Vamiiz: true
-        F3yson HD: true
-        zCrxyy: true
-        MotteBlatt18479: true
+HowLater: true
+JRollylp: true
+TomatensaftPUR: true
+ApfelsaftPUR: true
+Dilonxy: true
+UltraRobbe08: true
+Wabel_Ghost: true
+Greenplayer_Tv: true
+F0ngiMG: true
+xF1lmx: true
+NeunMatt54321: true
+OliverLP5499: true
+MaximalFlame: true
+zeyyco: true
+KilianCrafterYT: true
+LDread: true
+Sculky: true
+SMIBII_YT: true
+ToadenationNr1: true
+Qwuanda: true
+Jonas_TV5: true
+UltimatePhil794: true
+Todesbanane1203: true
+GrafTepid: true
+LitschiiYT: true
+VictorJu4751: true
+NURnyraee: true
+Djalami007: true
+Straussiiii: true
+ytDoomS: true
+GunmetalNine15: true
+MetallNatter2: true
+LodgedGuitar93: true
+BeecraftBE: true
+FabiDE14: true
+BennoMCyt: true
+GamilinoMC: true
+AreaNull: true
+Ilyco187: true
+Linus123455: true
+DoncaMilloLp: true
+DanielGamerYt31: true
+CuzImQuit: true
+DerHeroGamer007: true
+ToastbrotGHG: true
+zPqndaFNA: true
+Vamiiz: true
+F3yson HD: true
+zCrxyy: true
+MotteBlatt18479: true
 
 
 # Allgemeine Dev Variablen

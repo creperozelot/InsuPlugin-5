@@ -10,6 +10,7 @@ import cn.nukkit.form.window.FormWindow;
 import cn.nukkit.form.window.FormWindowCustom;
 import de.creperozelot.creperozelot;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -29,19 +30,20 @@ public class CommandTeleportUI extends Command {
 
             if (player.hasPermission("insu.admin.teleport")) {
                 int TPUIFORM = 178913281;
+                List<String> pl = new ArrayList<>();
 
                 FormWindowCustom gui = new FormWindowCustom(creperozelot.colorize("&6&lTeleport &a&lInterface"));
                 for (Player AllOnlinePlayers : Server.getInstance().getOnlinePlayers().values()) {
-                    List<String> pl = Arrays.asList(new String[] { AllOnlinePlayers.getName() });
-                    gui.addElement((Element)new ElementDropdown("Select", pl));
-                    player.showFormWindow((FormWindow)gui, TPUIFORM);
+                    pl.add(AllOnlinePlayers.getName());
                 }
+                gui.addElement((Element) new ElementDropdown("Select", pl));
+                player.showFormWindow((FormWindow) gui, TPUIFORM);
 
             } else {
-                player.sendMessage(creperozelot.colorize("&cDu hast keine Berechtigung für diesen Command."));
+                player.sendMessage(creperozelot.colorize(creperozelot.colorize("&cDu hast keine Berechtigung für diesen Command.")));
             }
         } else {
-            commandSender.sendMessage(creperozelot.colorize("&cDu kannst diesen Befehl nur als Spieler ausführen."));
+            commandSender.sendMessage(creperozelot.colorize(creperozelot.colorize("&cDu kannst diesen Befehl nur als Spieler ausführen.")));
         }
 
         return true;

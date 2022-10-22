@@ -1,5 +1,6 @@
 package de.creperozelot.commands;
 
+import cn.nukkit.potion.Effect;
 import de.creperozelot.creperozelot;
 import cn.nukkit.Player;
 import cn.nukkit.command.Command;
@@ -18,16 +19,14 @@ public class CommandSpectate extends Command {
         if (commandSender instanceof Player) {
             Player player = (Player) commandSender;
 
-            if (player.getName().equalsIgnoreCase("GodVikthor")) {
-                player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu kannst &cnicht&f in den &aSpectator&f Mode &bAlbert..."));
-            }
-
             if (player.hasPermission("insu.admin.spectate")) {
                 if (player.gamemode == 0 || player.gamemode == 1 || player.gamemode == 2) {
                     player.setGamemode(3);
                     player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu bist nun im &aSpectator &fMode"));
+                    player.removeEffect(14);
                 } else {
                     player.setGamemode(1);
+                    player.addEffect(Effect.getEffect(Effect.INVISIBILITY).setAmplifier(254).setDuration(20 * 999999));
                     player.sendMessage(creperozelot.colorize(creperozelot.prefix + "&fDu bist nun &cnicht mehr&f im &aSpectator &fMode"));
                 }
             } else {

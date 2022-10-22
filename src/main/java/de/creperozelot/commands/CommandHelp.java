@@ -1,11 +1,8 @@
 package de.creperozelot.commands;
 
-import de.creperozelot.creperozelot;
 import cn.nukkit.Player;
-import cn.nukkit.Server;
 import cn.nukkit.command.Command;
 import cn.nukkit.command.CommandSender;
-import cn.nukkit.potion.Effect;
 import de.creperozelot.creperozelot;
 
 public class CommandHelp extends Command {
@@ -24,19 +21,23 @@ public class CommandHelp extends Command {
 
             if (player.hasPermission("insu.admin.help")) {
 
-                player.sendMessage("&a======&a&lIN&2&lSU======");
-                player.sendMessage("&a/help&f - Zeigt diese Nachricht an.");
+                player.sendMessage(creperozelot.colorize("&a======&a&lIN&2&lSU======"));
+                player.sendMessage(creperozelot.colorize("&a/help&f - Zeigt diese Nachricht an."));
                 player.sendMessage("");
-                player.sendMessage("&a/sethost&f - Stellt den Hoster ein.");
+                player.sendMessage(creperozelot.colorize("&a/sethost&f - Stellt den Hoster ein."));
                 player.sendMessage("");
-                player.sendMessage("&a/tp&f - Teleportiert dich zu einem Spieler.");
+                player.sendMessage(creperozelot.colorize("&a/tp&f - Teleportiert dich zu einem Spieler."));
                 player.sendMessage("");
-                player.sendMessage("&a/spec&f - Setzt dich in den Zuschauer modus.");
-                player.sendMessage("&a======&a&lIN&2&lSU======");
+                player.sendMessage(creperozelot.colorize("&a/spec&f - Setzt dich in den Zuschauer modus."));
+                player.sendMessage("");
+                player.sendMessage(creperozelot.colorize("&a/insui&f - Öffnet das Insu Verwaltungs Interface."));
+                player.sendMessage("");
+                player.sendMessage(creperozelot.colorize("&a/start&f - Startet das Insu Projekt."));
+                player.sendMessage(creperozelot.colorize("&a======&a&lIN&2&lSU======"));
 
 
             } else {
-                commandSender.sendMessage("&cDu hast keine Berechtigung für diesen Command.");
+                commandSender.sendMessage(creperozelot.colorize("&cDu hast keine Berechtigung für diesen Command."));
             }
 
 
