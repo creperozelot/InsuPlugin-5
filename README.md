@@ -21,4 +21,9 @@ Dieses Plugin beinhaltet die obrigen Events, einen Start Countdown, eine Rundfü
 ![alt Map Spoiler 3](https://cdn.discordapp.com/attachments/962460468448985128/1009502713337348147/SPOILER_2022-08-17_01.42.05.png)
 ![alt Map Spoiler 4](https://cdn.discordapp.com/attachments/962460468448985128/1009502996050227290/SPOILER_2022-08-17_01.37.21.png)
 
+##Unterstüze mich und meine Teammitglieder
+<a href="https://pph.sh/partner/47114?utm_medium=banner&utm_content=Rootserver_580x400_Netboard-dark&target=" title="Prepaid-Hoster.de" target="_blank" rel="sponsored nofollow">
+    <img src="https://pph.sh/partner/banner/47114/Rootserver_580x400_Netboard-dark.png" width="580" height="400" alt="Prepaid Hoster Werbe-Banner">
+</a>
+
 Ein herzliches dank an Levi_GPP für das Resourcepack.
