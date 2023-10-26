@@ -1,3 +1,5 @@
+Discontinued - First Nukkit Plugin
+
 # InsuPlugin - Insu 5
 ## Welche Events gibt es in diesem INSU plugin?
 Es gibt die Events : 
